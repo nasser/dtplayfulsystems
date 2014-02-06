@@ -1,3 +1,1 @@
-# Parsons Design + Technology
-## Creative Code – Spring 2014
-Shiny Hsin-Ning Lee
+Hi, this is Shiny Hsin-Ning Lee
