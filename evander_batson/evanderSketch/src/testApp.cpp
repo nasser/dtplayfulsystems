@@ -2,6 +2,8 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
+    
+    ofDisableSmoothing();
 
 }
 
@@ -12,6 +14,9 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::draw(){
+    
+    ofBackground(100,80,200);
+    ofCircle(ofGetWidth()/2,ofGetHeight()/2,ofGetWidth()/4);
 
 }
 
