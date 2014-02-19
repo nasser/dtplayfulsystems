@@ -18,5 +18,9 @@ class testApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+
+		float x = 0;
+		int range;
+		ofColor theColor;
 		
 };
