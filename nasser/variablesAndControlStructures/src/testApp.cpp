@@ -25,7 +25,7 @@ void testApp::draw() {
     ofRect(200 + x, 200, 600, 400);
     
     ofSetColor(255, 255, 0);
-    for (int i=0; i<x; i += 20) {
+    for (int i=0; i<200; i += 20) {
         ofLine(200 + i, 0, 200 + i, 500);
     }
 }
