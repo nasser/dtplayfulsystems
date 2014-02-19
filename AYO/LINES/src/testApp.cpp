@@ -41,6 +41,45 @@ void testApp::update(){
 void testApp::draw(){
     ofBackground(backr,backg,backb,backa);
     
+    if (q==true){
+        
+    
+    for (int i=0; i<600; i++) {
+        ofPushMatrix();
+        ofRotate(ofRandom(10),0.0,0.0,1.0);
+        
+        if (s1){
+            ofSetColor(100,150,200,alp );
+            ofLine(lSx,i*lSy,i*lEx,lEy);
+        }
+        
+        if (s2){
+            ofSetColor(150,200,100,alp );
+            ofLine(600-l2Sx,i*l2Sy,600-(i*l2Ex),l2Ey);
+        }
+        
+        if (s3){
+            ofSetColor(200,100,200,alp );
+            ofLine(i*l3Sx,l3Sy,l3Ex,i*l3Ey);
+            }
+        
+        if (s4){
+            ofSetColor(60,100,20,alp );
+            ofLine(i*l3Sx,600-l3Sy,l3Ex,600-(i*l3Ey));}
+        
+        lSy=20;
+        lEx=20;
+        l2Sy=20;
+        l2Ex=20;
+        l3Sx=20;
+        l3Ey=20;
+        
+        ofPopMatrix();
+    }
+    }else{
+    
+    
+    
     
     for (int i=0; i<600; i++) {
         
@@ -56,7 +95,8 @@ void testApp::draw(){
        
         if (s3){
             ofSetColor(200,100,200,alp );
-            ofLine(i*l3Sx,l3Sy,l3Ex,i*l3Ey);}
+            ofLine(i*l3Sx,l3Sy,l3Ex,i*l3Ey);
+        }
         
         if (s4){
             ofSetColor(60,100,20,alp );
@@ -69,15 +109,17 @@ void testApp::draw(){
         l3Sx=20;
         l3Ey=20;
         
-        ofSetColor(255,255,255,10 );
-        ofRect(0,50,200,75);
-    }
+        
+    }}
     
+    ofSetColor(255,255,255,10 );
+    ofRect(0,50,200,100);
     
     ofSetColor(0,0,0,150);
     verdana14.drawString("lines = a,s,d,f", 10, 70);
     verdana14.drawString("colors = gv,hb,jn,km", 10, 90);
-    verdana14.drawString("pause = space", 10, 110);
+    verdana14.drawString("actions = q,space", 10, 110);
+    verdana14.drawString("mouse = drag", 10, 130);
 
 if(lSx>600){
     lSx=0;}
@@ -217,6 +259,17 @@ void testApp::keyPressed(int key){
     }else{
         if (key == ' '){
             space=false;
+        }
+    }
+    
+    
+    if (q==false) {
+        if (key == 'q'){
+            q=true;
+        }
+    }else{
+        if (key == 'q'){
+            q=false;
         }
     }
 

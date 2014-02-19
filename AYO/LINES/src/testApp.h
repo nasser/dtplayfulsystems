@@ -19,6 +19,6 @@ class testApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     int backr, backg, backb, backa, width,lineInt, height;
     float speed1,alp,lSx,lSy,lEx,lEy,l2Sx,l2Sy,l2Ex,l2Ey,l3Sx,l3Sy,l3Ex,l3Ey,lineW;
-    bool s1,s2,s3,s4,space;
+    bool s1,s2,s3,s4,space,q;
     	ofTrueTypeFont	verdana14;
 };
