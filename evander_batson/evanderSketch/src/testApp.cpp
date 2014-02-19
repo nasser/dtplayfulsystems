@@ -4,24 +4,63 @@
 void testApp::setup(){
     
     ofDisableSmoothing();
+    degreeShift = 45;
+    start = false;
+    ofBackground(255);
 
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
+    
+    if (start) {
+    
+    degreeShift = ofRandom(-90,90);
+    degreeRotate = ofRandom(0,360);
+        
+    }
+
 
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
     
-    ofBackground(100,80,200);
-    ofCircle(ofGetWidth()/2,ofGetHeight()/2,ofGetWidth()/4);
+    if (degreeShift > -50) {
+        
+        for (int i=0;i<1000;i++) {
+            
+            ofRotateX(degreeShift);
+            ofSetColor(000);
+            ofFill();
+            ofRect(ofGetHeight()/4+200, ofGetHeight()/4, ofGetWidth() - ofGetWidth()/4 + 200, ofGetHeight() - ofGetHeight()/4);
+            
+            ofRotateX(degreeShift);
+            ofSetColor(255);
+            ofFill();
+            ofRect(ofGetWidth()-500,ofGetHeight()/4, ofGetWidth() - ofGetWidth()/4 -500, ofGetHeight() - ofGetHeight()/4);
+            
+        }
 
+    }
+    
+    for (int i=0;i<1000;i++) {
+        
+        ofRotateX(degreeShift);
+        ofSetColor(255);
+        ofFill();
+        ofLine(ofGetWidth(),ofGetHeight(),0,ofGetHeight());
+        
+    }
+    
 }
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
+    
+    if (key == 's'){
+        start=!start;
+    }
 
 }
 

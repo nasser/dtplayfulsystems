@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>600AA34F-7E9D-44A6-8662-EB1BD940C605</string>
+	<string>8A32EA7C-B787-4CAA-8F67-0DDB927A79EE</string>
 	<key>IDESourceControlProjectName</key>
 	<string>evanderSketch</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>2A80EEC6-7EF2-4ECD-BDC4-B9AB8D6A77C7</key>
-		<string>https://github.com/nasser/dtplayfulsystems.git</string>
+		<key>7D42F48E-64D1-4363-893C-2209A658E7CD</key>
+		<string>https://github.com/evanderbatson/dtplayfulsystems.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>evander_batson/evanderSketch/evanderSketch.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>2A80EEC6-7EF2-4ECD-BDC4-B9AB8D6A77C7</key>
+		<key>7D42F48E-64D1-4363-893C-2209A658E7CD</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/nasser/dtplayfulsystems.git</string>
+	<string>https://github.com/evanderbatson/dtplayfulsystems.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>2A80EEC6-7EF2-4ECD-BDC4-B9AB8D6A77C7</string>
+	<string>7D42F48E-64D1-4363-893C-2209A658E7CD</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>2A80EEC6-7EF2-4ECD-BDC4-B9AB8D6A77C7</string>
+			<string>7D42F48E-64D1-4363-893C-2209A658E7CD</string>
 			<key>IDESourceControlWCCName</key>
 			<string>dtplayfulsystems</string>
 		</dict>
