@@ -47,15 +47,15 @@ void testApp::draw(){
         ofLine(200+i, 0, 200+i, 500);
     }
     
-    switch (x) {
-        case 20:
-            //do some stuff
-            break;
-        case 30:
-            //do some stuff
-        default:
-            break;
-    }
+//    switch (x) {
+//        case 20:
+//            //do some stuff
+//            break;
+//        case 30:
+//            //do some stuff
+//        default:
+//            break;
+//    }
 }
 
 //--------------------------------------------------------------
