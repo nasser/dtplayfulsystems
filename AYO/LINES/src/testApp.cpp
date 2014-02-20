@@ -75,6 +75,8 @@ void testApp::draw(){
         l3Ey=20;
         
         ofPopMatrix();
+        ofSetColor(255,255,255,10 );
+        ofRect(0,50,200,90);
     }
     }else{
     
@@ -108,12 +110,13 @@ void testApp::draw(){
         l2Ex=20;
         l3Sx=20;
         l3Ey=20;
-        
+        ofSetColor(255,255,255,10 );
+        ofRect(0,50,200,90);
         
     }}
     
     ofSetColor(255,255,255,10 );
-    ofRect(0,50,200,100);
+    ofRect(0,50,200,90);
     
     ofSetColor(0,0,0,150);
     verdana14.drawString("lines = a,s,d,f", 10, 70);
