@@ -7,3 +7,5 @@ cambios compu local
 =======
 Changes from remote
 >>>>>>> 138c15c8b2141a3045ff22026f1cb644cf4bd6b6
+
+* Remote updated form compu1
