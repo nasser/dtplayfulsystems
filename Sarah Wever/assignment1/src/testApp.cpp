@@ -3,7 +3,7 @@
 //--------------------------------------------------------------
 void testApp::setup(){
     
-        font.loadFont("AvenirLTStd-BlackOblique.otf.otf", 150, true, true, true);
+        font.loadFont("AvenirLTStd-BlackOblique.otf", 70, true, true, true);
 
 }
 
@@ -32,7 +32,7 @@ void testApp::draw(){
     }
     
     ofSetColor(255);
-    font.drawString("Wow. \nSuch Flower. \nMuch Code", ofGetWidth()/2.0, ofGetHeight()/2.0);
+    font.drawString("Wow. \nSuch Flower. \nMuch Code.", 100, 100);
     
 }
 
