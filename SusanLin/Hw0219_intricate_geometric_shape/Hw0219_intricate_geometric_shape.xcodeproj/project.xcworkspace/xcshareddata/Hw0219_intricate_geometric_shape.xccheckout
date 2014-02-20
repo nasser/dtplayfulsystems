@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BD9E7D81-53D4-4E7B-9344-220A393984FD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Hw0219_intricate_geometric_shape</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8ADB061B-112D-42A4-9F18-951EAC6A5166</key>
+		<string>https://github.com/shuyl105/dtplayfulsystems.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>dtplayfulsystems/SusanLin/Hw0219_intricate_geometric_shape/Hw0219_intricate_geometric_shape.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>59036B23-3BE1-486C-9025-233CC174867A</key>
+		<string>../../../../..</string>
+		<key>8ADB061B-112D-42A4-9F18-951EAC6A5166</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/shuyl105/dtplayfulsystems.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>59036B23-3BE1-486C-9025-233CC174867A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8ADB061B-112D-42A4-9F18-951EAC6A5166</string>
+			<key>IDESourceControlWCCName</key>
+			<string>dtplayfulsystems</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>59036B23-3BE1-486C-9025-233CC174867A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>of_v0.8-2</string>
+		</dict>
+	</array>
+</dict>
+</plist>
