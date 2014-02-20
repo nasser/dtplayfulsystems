@@ -2,4 +2,8 @@
 * Wed, 19:00 to 21:40
 * Exercise 1, upload folder. Done.
 * Exercise 2, complex forms, Done.
+<<<<<<< HEAD
 cambios compu local
+=======
+Changes from remote
+>>>>>>> 138c15c8b2141a3045ff22026f1cb644cf4bd6b6
