@@ -1,0 +1,276 @@
+#include "testApp.h"
+
+//--------------------------------------------------------------
+void testApp::setup(){
+    ofBackground(0,0,0);
+    theColor.set(0,0,0);
+    test1 = 20;
+    test2 = 10;
+    lnx = 0;
+    lny = 80;
+    count=20;
+    count2= 3;
+    lnx1 =20;
+    test3 = 100;
+    lyn2 = 30;
+    
+}
+
+//--------------------------------------------------------------
+void testApp::update(){
+    theColor.r+=1;
+    
+}
+
+//--------------------------------------------------------------
+void testApp::draw(){
+    
+    for (int i=count; i<40; i++) {
+        ofLine(i* lnx, lny*2, i*test1,test2);
+    }
+//    
+//        for (int i=count2; i<40; i++) {
+//            ofLine(i* lnx, lny, i*test1,test2);
+//        
+//    }
+    
+    for (int i=count; i<40; i++) {
+        ofLine(i* lnx, lny*3, i*test1,test2);
+    }
+    
+    
+    for (int i=count; i<40; i++) {
+        ofLine(i* lnx, lny*4, i*test1,test2);
+    }
+    
+    
+    for (int i=count; i<40; i++) {
+        ofLine(i* lnx, lny*5, i*test1,test2);
+    }
+    
+    
+    for (int i=count; i<40; i++) {
+        ofLine(i* lnx, lny*6, i*test1,test2);
+    }
+    
+    
+    for (int i=count; i<40; i++) {
+        ofLine(i* lnx, lny*7, i*test1,test2);
+    }
+    
+    
+    for (int i=count; i<40; i++) {
+        ofLine(i* lnx, lny*8, i*test1,test2);
+    }
+    
+    
+    for (int i=count; i<40; i++) {
+        ofLine(i* lnx, lny*9, i*test1,test2);
+    }
+    
+    for (int i=count; i<40; i++) {
+        ofLine(i* lnx, lny*10, i*test1,test2);
+    }
+    
+    for (int i=count; i<40; i++) {
+        ofLine(i* lnx, lny*10, i*test1,test2);
+    }
+    
+    
+    for (int i=count; i<150; i++) {
+        ofLine(i* lyn2, lny*1, i*test2,test2);
+    }
+    
+    for (int i=count; i<150; i++) {
+        ofLine(i* lyn2, lny*2, i*test2,test2);
+    }
+    
+    for (int i=count; i<150; i++) {
+        ofLine(i* lyn2, lny*3, i*test2,test2);
+    }
+    
+    for (int i=count; i<150; i++) {
+        ofLine(i* lyn2, lny*4, i*test2,test2);
+    }
+    for (int i=count; i<150; i++) {
+        ofLine(i* lyn2, lny*5, i*test2,test2);
+    }
+    for (int i=count; i<150; i++) {
+        ofLine(i* lyn2, lny*6, i*test2,test2);
+    }
+    
+//    
+//    for (int i=count; i<60; i++) {
+//        ofLine(lnx*9,i*  lny, test1,10*test2);
+//    }
+//    
+//    for (int i=count; i<40; i++) {
+//        ofLine(lnx*9,i*  lny, test1*20,i*test2);
+//    }
+//    
+//    for (int i=count; i<40; i++) {
+//        ofLine(lnx*9,i*  lny, test1*80,test2);
+ //   }
+//    
+//    for (int i=count; i<40; i++) {
+//        ofLine(i* lnx, lny, test1, i*test2);
+//    }
+    
+//    for (int i=count; i<40; i++) {
+//        ofLine(lnx*8,i*lny, test1*8, i*test3);
+//    }
+    
+//    test2+=2;
+//    if(test2>ofGetHeight()){
+//        // test2=0;
+//    }
+//    
+//    
+//    for (int i=count; i<50; i++) {
+//        ofLine(i* lnx1, lny, i*test1,test2);
+//        
+//    }
+//    
+//    test2+=10;
+//    if(test2>ofGetHeight()){
+//        // test2=0;
+//    }
+//    
+//    
+//    for (int i=count; i<50; i++) {
+//        ofLine(i* lnx1+10, lny, i*test1,test2);
+//        
+//        
+//        
+//        
+//    }
+    
+    //    test2+=5;
+    //    if(test2>ofGetHeight()){
+    //        test2=0;
+    //    }
+    //
+    //    for (int i=count; i<50; i++) {
+    //        ofLine(lnx1,i* lny, test1,i* test2);
+    //
+    //
+    //
+    //
+    //    }
+    //
+    //    test2+=5;
+    //    if(test2>ofGetHeight()){
+    //        test2=0;
+    //    }
+    
+    
+    
+    
+    //    for (int i=0; i<slices; i++) {
+    //        gluPartialDisk(quadric, innerRadius, outerRadius, subdivisions,
+    //                       concentricRings, i*sliceSize, sliceSize-gap);
+    //    }
+    
+    //      float speed=10;
+    //    ofLine(5, 5, 100, 600);
+    //
+    //    ofLine(0,0,50,600);
+    //    x+=0.2;
+    //
+    //    ofLine(10,0,0,600);
+    //    x+=0.2;
+    //
+    //    ofLine(15,0,30,600);
+    //    x+=0.2;
+    //
+    //    ofLine(0,0,y*speed,600);
+    //    y+=0.2;
+    
+    //    ofLine(0,x*speed,0,0);
+    //    x+=1;
+    
+    
+    //    float redValue=10.5;
+    //    int redValueAsInt=12; //-2*63..2*63
+    //    string name="DT";
+    
+    //
+    //    ofColor someColor;
+    //    someColor.r=255;
+    //    someColor.g=0;
+    //    someColor.b=60;
+    //    ofSetColor(someColor);
+    //      ofSetColor(theColor);
+    //    ofRect(50,ofGetElapsedTimef()*speed,50,50);
+    //    ofSetColor(255,255,255);
+    //    ofRect(50,x*speed,50,50);
+    //    x+=5;
+    
+    
+    //   ofSetColor(someColor);
+    
+    
+    
+}
+
+//--------------------------------------------------------------
+void testApp::keyPressed(int key){
+    
+    switch (key) {
+        case 'a':
+            theColor.b=255;
+            break;
+        case 'b':
+            theColor.g=255;
+            break;
+            
+        default:
+            //if nothing matches
+            break;
+    }
+    
+    
+    
+    //theColor.g=255;
+    
+}
+
+//--------------------------------------------------------------
+void testApp::keyReleased(int key){
+    //theColor.g=0;
+}
+
+//--------------------------------------------------------------
+void testApp::mouseMoved(int x, int y ){
+    
+}
+
+//--------------------------------------------------------------
+void testApp::mouseDragged(int x, int y, int button){
+    
+}
+
+//--------------------------------------------------------------
+void testApp::mousePressed(int x, int y, int button){
+    
+}
+
+//--------------------------------------------------------------
+void testApp::mouseReleased(int x, int y, int button){
+    
+}
+
+//--------------------------------------------------------------
+void testApp::windowResized(int w, int h){
+    
+}
+
+//--------------------------------------------------------------
+void testApp::gotMessage(ofMessage msg){
+    
+}
+
+//--------------------------------------------------------------
+void testApp::dragEvent(ofDragInfo dragInfo){ 
+    
+}
