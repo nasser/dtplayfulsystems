@@ -12,29 +12,6 @@ void testApp::update(){
 
 }
 
-void drawlines(){
-    ofRotate(100);
-    ofLine(20, 20, 100, 100);
-}
-
-void drawlines2(){
-    ofTranslate(0, 0);
-    ofRotate(50);
-    ofLine(0, 0, 100, 100);
-}
-
-void drawCricle(){
-    ofTranslate(0, 0);
-    ofRotate(5);
-    ofLine(10, 10, 50, 50);
-}
-
-void drawBigCricle(){
-    ofTranslate(0, 0);
-    ofRotate(5);
-    ofLine(100, 100, 500, 500);
-}
-
 //--------------------------------------------------------------
 void testApp::draw(){
     
@@ -43,23 +20,27 @@ void testApp::draw(){
     
 //frist one
     for(int i=0; i<60; i++){
-        drawlines();
+        ofRotate(80);
+        ofLine(i, 100+i, 5i, 100-i);
     }
     
 // second
     ofSetColor(95, 150, 255);
-    for (int a=0; a<100; a+=5) {
-        drawlines2();
+    for (int a=0; a<200; a+=5) {
+        ofRotate(5);
+        ofLine(20+a, 0, 20-a, 0);
     }
 // Green
     ofSetColor(0, 255, 95);
-    for (int a=0; a<500; a+=5) {
-        drawCricle();
+    for (int a=0; a<500; a+=10) {
+        ofRotate(5);
+        ofLine(10, 5+a, a, 5-a);
     }
 //White
     ofSetColor(255, 255, 255);
-    for (int a=0; a<500; a+=5) {
-        drawBigCricle();
+    for (int a=0; a<200; a+=5) {
+        ofRotate(2);
+        ofLine(10, a, 10, -a);
     }
     
 }
