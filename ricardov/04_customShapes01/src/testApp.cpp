@@ -4,7 +4,29 @@
 
 //--------------------------------------------------------------
 void testApp::heart(float x2, float y2, float scale, float color) {
+
+    float myLenght = sin(myRotation/6.5) *20;
+    
+    //LINES BG
     ofPushMatrix();
+        ofRotate(myRotation * 1.5);
+        ofFill();
+        ofSetColor(0, 180, 180);
+
+        float myPulse = 130 + myLenght;
+        ofLine(0, 0, 0,  myPulse);
+        ofLine(0, -myPulse, 0,  0);
+    
+        ofSetColor(110, 0, 150, 100 );
+        ofCircle(myPulse+10, 0, 1);
+
+    ofPopMatrix();
+    
+    
+    //HEART
+    ofPushMatrix();
+    ofSetColor(250, 0, 0);
+
     ofTranslate(0, -25);
     ofBeginShape();
         ofVertex(0, 20);
@@ -13,36 +35,33 @@ void testApp::heart(float x2, float y2, float scale, float color) {
         ofBezierVertex(0, -35, -80, 10, 0, 60);
     ofEndShape();
     ofPopMatrix();
-        
+ 
+
 }
 
 
 //--------------------------------------------------------------
 void testApp::myShape01(float x1, float y1, float sz, float myColor){
     
-    //Creating positions
+    ofTranslate(x1, y1);
+
+    //Creating positions for the shape
     for (int i=0; i<NUM_SIDES; i++) {
         xPos[i] = sz * sin(angle * i);
         yPos[i] = sz * cos(angle * i);
     }
-    ofTranslate(x1, y1);
     
-    //1 CREATING SHAPE
+    //CREATING SHAPE
     ofBeginShape();
-    ofSetColor(20 + myColor, 80 + myColor, 0);
-    for (int i=0; i<NUM_SIDES; i++) {
-        ofVertex(xPos[i], yPos[i]);
-    }
+        ofSetColor(20 + myColor, 80 + myColor, 0);
+        ofRotate(myRotation);
+        for (int i=0; i<NUM_SIDES; i++) {
+            ofVertex(xPos[i], yPos[i]);
+        }
     ofEndShape();
     
-    //SECUNDARY SHAPE
-    ofFill();
-    ofSetColor(0, 200, 200);
-    ofLine(60, 0, 160, 0);
-
 
 }
-
 
 
 
@@ -52,6 +71,7 @@ void testApp::setup(){
     ofSetBackgroundAuto(false);
     ofEnableAlphaBlending();
 
+    //ROTATIO FOR LINES
     myRotation = 0;
     
 }
@@ -68,7 +88,7 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
     ofFill();
-    ofSetColor(100, 10, 10, 10);
+    ofSetColor(40, 10, 40, 10);
     ofRect(0, 0, ofGetWidth(), ofGetHeight());
     
     int numb_of_objects = NUM_SIDES;
@@ -78,10 +98,9 @@ void testApp::draw(){
 
     ofTranslate(ofGetWidth()/2, ofGetHeight()/2);
 
-    //CENTRAL heart
+    //CENTRAL HEART
     ofPushMatrix();
         ofScale(2, 2);
-    ofSetColor(250, 0, 0);
         heart(0, 0, 60, 60);
     ofPopMatrix();
     
@@ -98,8 +117,7 @@ void testApp::draw(){
     
     }
 
-
-
+    
     
 }
 
