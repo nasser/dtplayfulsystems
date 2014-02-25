@@ -67,7 +67,7 @@ void testApp::myShape01(float x1, float y1, float sz, float myColor){
 
 //--------------------------------------------------------------
 void testApp::setup(){
-    ofBackground(20, 20, 20);
+    ofBackground(0);
     ofSetBackgroundAuto(false);
     ofEnableAlphaBlending();
 
@@ -88,7 +88,7 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
     ofFill();
-    ofSetColor(40, 10, 40, 10);
+    ofSetColor(100, 10, 10, 10);
     ofRect(0, 0, ofGetWidth(), ofGetHeight());
     
     int numb_of_objects = NUM_SIDES;
