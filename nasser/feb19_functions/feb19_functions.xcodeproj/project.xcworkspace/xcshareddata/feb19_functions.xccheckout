@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9B687088-63D8-4B6C-A357-8268D41F5020</string>
+	<key>IDESourceControlProjectName</key>
+	<string>feb19_functions</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BAE2A7C7-4612-456E-9464-DCD507E3DB86</key>
+		<string>https://github.com/nasser/dtplayfulsystems.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>nasser/feb19_functions/feb19_functions.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BAE2A7C7-4612-456E-9464-DCD507E3DB86</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nasser/dtplayfulsystems.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BAE2A7C7-4612-456E-9464-DCD507E3DB86</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BAE2A7C7-4612-456E-9464-DCD507E3DB86</string>
+			<key>IDESourceControlWCCName</key>
+			<string>dtplayfulsystems</string>
+		</dict>
+	</array>
+</dict>
+</plist>
