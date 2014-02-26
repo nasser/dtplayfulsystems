@@ -47,7 +47,7 @@ void testApp::draw(){
         ofBeginShape();
             ofSetColor(20, 120, 200, 20);
             ofVertex(0, 0);
-            ofVertex(widthElements * i,  -heights[i]+y);
+            ofVertex(widthElements * i,  -heights[i] + y);
             ofVertex(w - border, 0);
         ofEndShape();
 
