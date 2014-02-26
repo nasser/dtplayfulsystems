@@ -18,5 +18,12 @@ class testApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-		
+
+ //mine
+    
+        void myfunction(float x, float y, float angle, float length);
+    
+        void stars(ofPoint point, float angle, float length);
+
+    
 };
