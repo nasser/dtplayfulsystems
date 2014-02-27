@@ -19,8 +19,13 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
+    void primaryRotatorDisk(int c, int p);
+    void secondaryRotatorDisk(int c, int p);
+    void tertiaryRotatorDisk(int c);
+    
     int degreeShift;
     int degreeRotate;
     bool start;
+    int rays;
 		
 };

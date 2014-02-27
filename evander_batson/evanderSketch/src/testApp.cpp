@@ -3,6 +3,8 @@
 //--------------------------------------------------------------
 void testApp::setup(){
     
+    rays = 1000;
+    
     ofDisableSmoothing();
     degreeShift = 45;
     start = false;
@@ -26,34 +28,49 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
     
-    if (degreeShift > -50) {
+    if (degreeShift > -90) {
         
         for (int i=0;i<1000;i++) {
             
-            ofRotateX(degreeShift);
-            ofSetColor(000);
-            ofFill();
-            ofRect(ofGetHeight()/4+200, ofGetHeight()/4, ofGetWidth() - ofGetWidth()/4 + 200, ofGetHeight() - ofGetHeight()/4);
             
-            ofRotateX(degreeShift);
-            ofSetColor(255);
-            ofFill();
-            ofRect(ofGetWidth()-500,ofGetHeight()/4, ofGetWidth() - ofGetWidth()/4 -500, ofGetHeight() - ofGetHeight()/4);
+            primaryRotatorDisk(000, 200);
+            
+
+            secondaryRotatorDisk(200, 500);
             
         }
 
     }
     
-    for (int i=0;i<1000;i++) {
+    for (int i=0;i<500;i++) {
         
-        ofRotateX(degreeShift);
-        ofSetColor(255);
-        ofFill();
-        ofLine(ofGetWidth(),ofGetHeight(),0,ofGetHeight());
+        tertiaryRotatorDisk(255);
         
     }
     
 }
+
+void testApp::primaryRotatorDisk(int c, int p) {
+    ofRotateX(degreeShift);
+    ofSetColor(c);
+    ofFill();
+    ofRect(ofGetHeight()/2+100, ofGetHeight()/4, ofGetWidth() - ofGetWidth()/2 + p, ofGetHeight() - ofGetHeight()/2);
+    }
+
+void testApp::secondaryRotatorDisk(int c, int p) {
+    ofRotateX(degreeShift);
+    ofSetColor(c);
+    ofFill();
+    ofRect(ofGetWidth()-100,ofGetHeight()/4, ofGetWidth() - ofGetWidth()/2 - p, ofGetHeight() - ofGetHeight()/4);
+    }
+
+void testApp::tertiaryRotatorDisk(int c) {
+    ofRotateX(degreeShift);
+    ofSetColor(c);
+    ofFill();
+    ofLine(ofGetWidth(),ofGetHeight(),0,ofGetHeight());
+    }
+
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
