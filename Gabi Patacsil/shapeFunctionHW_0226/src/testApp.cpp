@@ -1,29 +1,70 @@
 #include "testApp.h"
 
-    void testApp::drawThis(float x1, float y1, float x2, float y2, float z, float angle, float radius1, float radius2) {
+    void testApp::drawBow(float scale, float x, float y) {
 
     ofPoint center;
-    center.set(x1, y1);
+    center.set(x-235, y-225);
     ofTranslate(center);
-    //ofRotate(ofGetFrameNum(), 0, cos(ang<#float radius#>le), 0);
-
+        float bow = scale;
+        float x0 = bow;
+        float x1 = bow*2;
+        float x2 = bow*3;
+        float x3 = bow*5;
+        float x4 = bow*6;
+        float x5 = bow*7;
+        float x6 = bow*8;
+        float x7 = bow*11;
+        float x8 = bow*13;
+        float x9 = bow*14;
+        float x10 = bow*16;
+        float x11 = bow*17;
+        float x12 = bow*18;
+        
+        float y0 = bow*4;
+        float y1 = x3;
+        float y2 = x4;
+        float y3 = x5;
+        float y4 = x6;
+        float y5 = bow*10;
+        float y6 = x7;
+        float y7 = bow*12;
+        float y8 = x8;
+        float y9 = x9;
+        
+        
+        ofFill();
+        ofSetColor(200, 10, 0);
+        ofBeginShape();
+        ofVertex(x6,y4);
+        ofBezierVertex(x6,y3,x7,y3,x7,y4);
+        ofVertex(x7,y4);
+        ofBezierVertex(x8,y2,x9,y1,x10,y0);
+        ofVertex(x10,y0);
+        ofBezierVertex(x11,y2,x12,y4,x10,y9);
+        ofVertex(x10,y9);
+        ofBezierVertex(x9, y8, x8, y7, x7, y5);
+        ofVertex(x7,y5);
+        ofBezierVertex(x7,y6,x6,y6,x6,y5);
+        ofVertex(x6,y5);
+        ofBezierVertex(x4,y7,x3,y8,x2,y9);
+        ofVertex(x2, y9);
+        ofBezierVertex(x0,y4,x1,y2,x2,y0);
+        ofVertex(x2, y0);
+        ofBezierVertex(x3,y1,x4,y2,x6,y4);
+        ofEndShape();
     
     }
 
 
-void testApp::drawTwoLines(float spacing, float x1, float y1, float x2, float y2) {
-    ofLine(x1, y1, x2, y2);
-    ofLine(x1, y1 + spacing, x2, y2 + spacing);
-}
+
 
 
 
 
 //--------------------------------------------------------------
 void testApp::setup(){
-//    ofBackground(0);
-//    ofSetFrameRate(30);
-//	ofEnableAlphaBlending();
+    ofBackground(0);
+
 
 }
 
@@ -35,33 +76,7 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
 
-    //drawThis(400,
-    ofSetColor(255, 255, 255);
-	float x0 = 200;
-	float y0 = 200;
-	float x1 = 250;//cos(ofGetElapsedTimef()*1.0f);
-
-	float y1 = 100+10*sin(ofGetElapsedTimef()*1.0f);
-	float x2 = 300;//*cos(ofGetElapsedTimef()*2.0f);
-	float y2 = 100+10*sin(ofGetElapsedTimef()*1.0f);
-	float x3 = 200;
-	float y3 = 200;
-	
-	
-	
-	ofFill();
-    ofSetColor(255, 255, 255);
-    ofBeginShape();
-	ofVertex(x0,y0);
-    ofBezierVertex(x1,y1,x2,y2,x3,y3);
-    ofVertex(x0-50,y0-50);
-    ofBezierVertex(x1,y1,x2,y2,x3,y3);
-
-    ofEndShape();
-
-	
-
-
+    drawBow(25, ofGetWidth()/2 , ofGetHeight()/2);
 
     
 }

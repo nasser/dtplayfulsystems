@@ -19,9 +19,5 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		
-    void drawThis(float x1, float y1, float x2, float y2, float z, float angle, float radius1, float radius2);
-    void drawTwoLines(float spacing, float x1, float y1, float x2, float y2);
-
-    ofPath path;
-    ofPoint drawAngledLine(ofPoint center, float angle, float length);
+    void drawBow(float scale, float x1, float y1);
 };
