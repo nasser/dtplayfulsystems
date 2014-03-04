@@ -26,13 +26,14 @@ void testApp::draw(){
         float t = ofDegToRad(i);
         float x = centerX + cos(t) * 300;
         float y = centerY + sin(t) * 300;
-        float x2 = (centerX + cos(6*t)*300);
-        float y2 = (centerY + sin(6*t)*300);
+        float x2 = centerX + cos(cos(ofGetElapsedTimef())*t)*300;
+        float y2 = centerY + sin(sin(ofGetElapsedTimef())*t)*300;
         ofLine(x, y, x2, y2);
+        
     }
     
     ofSetColor(255);
-    font.drawString("Wow. \nSuch Flower. \nMuch Code.", 100, 100);
+    //font.drawString("Wow. \nSuch Flower. \nMuch Code.", 100, 100);
     
 }
 
