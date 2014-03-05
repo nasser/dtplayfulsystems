@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "container:../../../../../../Downloads/src/bezierCurve.h">
+   </FileRef>
+   <FileRef
+      location = "container:../../../../../../Downloads/src/main.cpp">
+   </FileRef>
+   <FileRef
+      location = "container:../../../../../../Downloads/src/testApp.cpp">
+   </FileRef>
+   <FileRef
+      location = "container:../../../../../../Downloads/src/testApp.h">
+   </FileRef>
+</Workspace>
