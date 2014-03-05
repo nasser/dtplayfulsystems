@@ -4,7 +4,7 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-
+ofSetBackgroundAuto(false);
 }
 
 //--------------------------------------------------------------
@@ -44,34 +44,34 @@ void testApp::draw(){
 //    }
     
     
-    
-//    float mouseX01 = (float)mouseX/ofGetWidth();
+//
+    float mouseX01 = (float)mouseX/ofGetWidth();
 //    ofBackground(mouseX01 * 100, mouseX01 * 100,mouseX01 * 100);
     
     
-//    float circleX = ofMap(mouseX, 0, ofGetWidth(), 50, 350, true); // true enables clamping
-//    float circleY = ofMap(mouseX, 0, ofGetWidth(), 100, 300 + (sin(ofGetElapsedTimef()) * 50), true);;
+    //float circleX = ofMap(mouseX, 0, ofGetWidth(), 50, 350, true); // true enables clamping
+    //float circleY = ofMap(mouseX, 0, ofGetWidth(), 100, 300 + (sin(ofGetElapsedTimef()) * 50), true);
 
-//    float circleX = xCoordinateOnLine(mouseX01, 50, 350);
-//    float circleY = yCoordinateOnLine(mouseX01, 100, 350);
-//
-//    ofCircle(circleX, circleY, 20);
+    float circleX = xCoordinateOnLine(400, 100 + (sin(ofGetElapsedTimef()) * 150), 350);
+    float circleY = yCoordinateOnLine(300 + (sin(ofGetElapsedTimef()) * 50), 100, 350);
+
+   // ofCircle(circleX, circleY, 20);
     
     ofSetColor(0);
     
     ofPoint from, to, circleCenter, test;
     from.set(50, ofGetHeight()/2);
-    to.set(ofGetWidth() - 50, ofGetHeight()/2);
-//
-//    
-//    circleCenter = pointOnLine(ofMap(sin(ofGetElapsedTimef()), -1, 1, 0, 1), from, to);
-//    ofCircle(circleCenter, 20);
-//    
-//    ofCircle(from,2);
-//    ofCircle(to, 2);
-//    ofLine(from, to);
-    
+    to.set(ofGetWidth() - (ofGetElapsedTimef()*20), ofGetHeight()/2);
+
     float t = ofMap(sin(ofGetElapsedTimef()), -1, 1, 0, 1);
+
+    circleCenter = pointOnLine(t, from, to+cos(ofGetElapsedTimef())*300);
+    ofCircle(circleCenter, 2);
+    
+    ofCircle(from,2);
+    ofCircle(to, 2);
+    //ofLine(from, to);
+    
     
     
     
