@@ -19,6 +19,6 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-        float xCoordinateOnLine(float t, float x1, float x2);
-		float yCoordinateOnLine(float t, float y1, float y2);
+        float xCoordinateOnLine(float x1, float x2);
+		float yCoordinateOnLine(float y1, float y2);
 };

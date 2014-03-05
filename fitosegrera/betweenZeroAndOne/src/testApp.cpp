@@ -10,16 +10,16 @@ void testApp::update(){
 
 }
 
-float testApp::xCoordinateOnLine(float t, float x1, float x2){
-    t = ofClamp(t, 0, 1);
+float testApp::xCoordinateOnLine(float x1, float x2){
     
-    return (x2 - x1) * t + x1;
+    
+    return (x2 - x1) * x1;
 }
 
-float testApp::yCoordinateOnLine(float t, float y1, float y2){
-    t = ofClamp(t, 0, 1);
+float testApp::yCoordinateOnLine(float y1, float y2){
     
-    return (y2 - y1) * t + y1;
+    
+    return (y2 - y1) * y1;
 }
 
 //--------------------------------------------------------------
@@ -37,8 +37,8 @@ void testApp::draw(){
     //float circleX = ofMap(mouseX, 0, ofGetWidth(), 50, 350, true);
     //float circleY = ofMap(mouseX, 0, ofGetWidth(), 100, 300 + sin(ofGetElapsedTimef() * 10) * 100, true);
     
-    float circleX = xCoordinateOnLine(mouseX01, 50, 350);
-    float circleY = yCoordinateOnLine(mouseX01, 100, 300) + sin(ofGetElapsedTimef() * 10) * 100;
+    float circleX = xCoordinateOnLine(0, 0 + ofGetElapsedTimef() * 10);
+    float circleY = yCoordinateOnLine(ofGetHeight(), 0) + sin(ofGetElapsedTimef() * 10) * 100;
     
     
     ofCircle(circleX, circleY, 1);
