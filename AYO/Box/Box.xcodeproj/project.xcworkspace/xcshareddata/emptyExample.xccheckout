@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2442FB6A-5805-478A-B5E9-A2326F3F7938</string>
+	<key>IDESourceControlProjectName</key>
+	<string>emptyExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F8F7E6C2-0270-465D-B253-3F5766812232</key>
+		<string>https://github.com/okuna291/dtplayfulsystems.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AYO/Box/emptyExample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F8F7E6C2-0270-465D-B253-3F5766812232</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/okuna291/dtplayfulsystems.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F8F7E6C2-0270-465D-B253-3F5766812232</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F8F7E6C2-0270-465D-B253-3F5766812232</string>
+			<key>IDESourceControlWCCName</key>
+			<string>dtplayfulsystems</string>
+		</dict>
+	</array>
+</dict>
+</plist>
