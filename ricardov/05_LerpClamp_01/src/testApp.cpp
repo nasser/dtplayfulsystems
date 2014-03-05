@@ -29,27 +29,39 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
     
-    // 1 - LERP - - - - - - - - - - - - - - - -
+    // 1 - LERP, YELLOW BALL - - - - - - - - - - - - - - - -
     amount1 = 0.1;
 
     x1 = ofLerp(x1, mouseX, amount1);
     y1 = ofLerp(y1, mouseY, amount1);
 
+    //SHOW VALUES ON SCREEN
+    ofSetColor(200);
+    ofDrawBitmapString("ofLerp", x1 + 13, y1);
+    ofDrawBitmapString("x: " + ofToString(x1),      x1 + 13, y1+12);
+    ofDrawBitmapString("y: " + ofToString(y1),      x1 + 13, y1+24);
+
     ofSetColor(200, 200, 0);
-//    ofCircle(x1, y1, 10);
+    ofCircle(x1, y1, 10);
     
 
     
-    // 2 - CLAMP - - - - - - - - - - - - - - - -
+    // 2 - CLAMP, GREEN BALL - - - - - - - - - - - - - - - -
     newX = ofClamp(x2, 400, 700);
     newY = ofClamp(y2, 400, 700);
 
     //RECT AREA
-    ofSetColor(30);
+    ofSetColor(70, 40);
     ofRect(400, 400, 300, 300);
 
-    //BALL CONSTRINED
-    ofSetColor(0, 200, 200);
+    //SHOW VALUES ON SCREEN
+    ofSetColor(200);
+    ofDrawBitmapString("ofClamp", newX + 13, newY);
+    ofDrawBitmapString("newX: " + ofToString(newX),      newX + 13, newY+12);
+    ofDrawBitmapString("newY: " + ofToString(newY),      newX + 13, newY+24);
+
+    //BALL CONSTARINED
+    ofSetColor(0, 20, 200);
     ofCircle(newX, newY, 10);
     
     
