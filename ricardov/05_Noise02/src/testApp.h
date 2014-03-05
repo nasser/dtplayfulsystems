@@ -2,7 +2,7 @@
 
 #include "ofMain.h"
 
-#define NUM_POINTS 640
+#define NUM_POINTS 1024
 
 class testApp : public ofBaseApp{
 
@@ -24,9 +24,11 @@ class testApp : public ofBaseApp{
 
         //FOR LINES
         float x, y;
-        float myNoise, myAngle, w, h;
+        float w, h;
         float posY[NUM_POINTS];
+        float angle;
     
+        ofPoint myPoint;
     
 };
 

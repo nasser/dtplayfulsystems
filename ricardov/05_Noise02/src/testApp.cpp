@@ -3,64 +3,73 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-    ofSetWindowShape(640, 480);
+    ofSetWindowShape(1024, 768);
+    ofBackground(10);
     ofSetBackgroundAuto(true);
+
+    w = ofGetWidth();
+    h = ofGetHeight();
 
     // FOR LINES
     x = 0;
     y = 0;
-    myNoise = 0;
-    myAngle = 0;
+    angle = 0;
 
-    w = ofGetWidth();
-    h = ofGetHeight();
-    
-//    ofSetFrameRate(5);
-    
+
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
     
-    myAngle = myAngle + 0.1;
  
-    // For every x value, calculate a y value with sine function
-    x = myAngle;
-
     
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
-    ofBackground(10);
 
-    
-    // 1 -LINES
-    ofPushMatrix();
-        ofSetColor(200, 200, 100); // gray
-        ofDrawBitmapString("Homework 5 - Lines and Noise \nRicardov", 20,20);
-    ofPopMatrix();
-
-    
-    // 1ok
+    // 0 - COLOR GRADIENT
     for (int i = 0; i < NUM_POINTS; i++) {
         for (int j=0; j<h; j++) {
-            
-            ofSetColor(.3*i, .4*j, 150); // gray
-            ofCircle(i, h/2 + sin(j)*50, .5);
+  //          ofSetColor(.3*i, .4*j, 150); // gray
+//            ofCircle(i, j, .5);
         }
     }
-    
-    // 1ok
-//    for (int i = 0; i < NUM_POINTS; i++) {
-//        for (int j=0; j<h; j++) {
-//            
-//            ofSetColor(.3*i, .4*j, 150); // gray
-//            ofCircle(i, j, .5);
-//        }
-//    }
 
+    // 1 - TITLE
+        ofSetColor(200, 200, 100); // gray
+        ofDrawBitmapString("Homework 5 - Interpolation, Noise (Ricardov):\nA- Noise\nB- Noise Circle\nC- Random ", 20,20);
  
+
+    
+    // 1 - NOISE
+    for (int i=0; i<w; i++){
+        ofRect(i, h/3 * ofNoise(x), 5, 5);
+        x = x + .009;
+    }
+
+    
+    // 2 - NOISE CIRCLE
+    for (int i=0; i<w; i++){
+
+        float nY     = sin(x) ;
+        float nX     = sin(y) ;
+
+        float circX = w/2 + sin(angle) *  200;
+        float circY = h/2 + cos(angle) *  200;
+
+        
+        ofRect(circX + nX, circY + nY, 2, 2);
+        angle += .08;
+    }
+
+    
+    // 3 - RANDOM
+    for (int i=0; i<w; i++){
+        ofRect(i, h-100 + ofRandom(-30, 30), 5, 5);
+    }
+
+    
 }
 
 //--------------------------------------------------------------

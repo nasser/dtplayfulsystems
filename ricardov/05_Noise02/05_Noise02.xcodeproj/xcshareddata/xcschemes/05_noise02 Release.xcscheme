@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-               BuildableName = "05_noise02.app"
+               BuildableName = "05_Noise02.temp_caseinsensitive_rename.app"
                BlueprintName = "05_Noise02.temp_caseinsensitive_rename"
                ReferencedContainer = "container:05_Noise02.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "05_noise02.app"
+            BuildableName = "05_Noise02.temp_caseinsensitive_rename.app"
             BlueprintName = "05_Noise02.temp_caseinsensitive_rename"
             ReferencedContainer = "container:05_Noise02.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "05_noise02.app"
+            BuildableName = "05_Noise02.temp_caseinsensitive_rename.app"
             BlueprintName = "05_Noise02.temp_caseinsensitive_rename"
             ReferencedContainer = "container:05_Noise02.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "05_noise02.app"
+            BuildableName = "05_Noise02.temp_caseinsensitive_rename.app"
             BlueprintName = "05_Noise02.temp_caseinsensitive_rename"
             ReferencedContainer = "container:05_Noise02.xcodeproj">
          </BuildableReference>
