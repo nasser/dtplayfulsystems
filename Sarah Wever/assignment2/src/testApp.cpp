@@ -23,7 +23,6 @@ void testApp::star(float x, float y, float size){
     
 }
 
-
 //--------------------------------------------------------------
 void testApp::setup(){
     
