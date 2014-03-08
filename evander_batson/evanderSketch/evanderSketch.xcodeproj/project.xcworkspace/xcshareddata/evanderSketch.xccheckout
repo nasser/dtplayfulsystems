@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>03E49391-4E77-4047-83A1-6218310AD32C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>evanderSketch</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>451B877C-1C2B-4F64-9B09-EE7C6BCB408E</key>
+		<string>https://github.com/evanderbatson/dtplayfulsystems.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>evander_batson/evanderSketch/evanderSketch.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>451B877C-1C2B-4F64-9B09-EE7C6BCB408E</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/evanderbatson/dtplayfulsystems.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>451B877C-1C2B-4F64-9B09-EE7C6BCB408E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>451B877C-1C2B-4F64-9B09-EE7C6BCB408E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>dtplayfulsystems</string>
+		</dict>
+	</array>
+</dict>
+</plist>
