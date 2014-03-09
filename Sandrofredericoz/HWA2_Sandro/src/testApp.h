@@ -21,5 +21,5 @@ class testApp : public ofBaseApp{
 
         void ofImage ();
     
-        void 
+ 
 };

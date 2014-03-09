@@ -26,9 +26,19 @@ void testApp::draw(){
     string title = "Creative Coding";
 
     ofDrawBitmapString(title, ofGetWidth()/2 - (title.length()*8)/2, 30);
-    ofDrawBitmapString("Homework Assignment" ,ofGetWidth()/2, 45);
-    ofDrawBitmapString("Due February 19", ofGetWidth()/2, 60);
-    ofDrawBitmapString("Sandrofredericoz",ofGetWidth()/2, 75);
+    
+    string title1 = "Homework Assignment";
+    
+    ofDrawBitmapString(title1 ,ofGetWidth()/2 - (title1.length()*8)/2, 45);
+    
+    string title2 = "Due February 19";
+    
+    ofDrawBitmapString(title2, ofGetWidth()/2- (title2.length()*8)/2, 60);
+    
+    string title3 = "Sandrofredericoz";
+    
+    ofDrawBitmapString(title3,ofGetWidth()/2-(title3.length()*8)/2, 75);
+    
     
     ofSetColor(255, 255, 255);
     
