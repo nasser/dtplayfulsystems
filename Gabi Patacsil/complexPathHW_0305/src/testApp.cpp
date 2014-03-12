@@ -27,17 +27,22 @@ void testApp::draw(){
     
     
     
-    ofSetColor(0,0,0,10);
-    for(int i = 0; i <100; i++){
-    ofPoint from, to, circleCenter, test;
-    from.set(400+(i*5), 400);
-    to.set(550, 200+(i*5));
-    
-    float t = ofMap(sin(ofGetElapsedTimef()), -1, 1, 0, 1);
-    
-    circleCenter = pointOnLine(t, from-cos(ofGetElapsedTimef())*20, to+cos(ofGetElapsedTimef())*10);
-    ofCircle(circleCenter, 2);
+        ofSetColor(0,100,200,10);
+        ofTranslate(ofGetWindowWidth()/2, ofGetWindowHeight()/2);
+    if(ofGetElapsedTimef()<10){
+        for(int i = 0; i <100; i++){
+            ofPoint from, to, circleCenter;
+            from.set(i, 0);
+            to.set(10, 20+i);
+            
+            ofRotate(60);
+            float t = ofMap(sin(ofGetElapsedTimef()), -1, 1, 0, .75);
+            circleCenter = pointOnLine(t, from-(sin(ofGetElapsedTimef())*10), to+sin(ofGetElapsedTimef()));
+            ofSetColor(200-i,50+i,200,10);
+            ofCircle(circleCenter, 1);
+        }
     }
+
     
     
 }

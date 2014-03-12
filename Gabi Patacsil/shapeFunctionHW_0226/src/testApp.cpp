@@ -76,7 +76,7 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
 
-    drawBow(25, ofGetWidth()/2 , ofGetHeight()/2);
+    drawBow(15, 300, 500);
 
     
 }
