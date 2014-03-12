@@ -24,7 +24,7 @@ void testApp::draw(){
         
     float pos = sin(ofGetElapsedTimef()*((float)(i)/ n))*ofGetHeight()/2;
     
-    ofLine(pos*0.8, 0, pos*0.8, 2);  //ofCircle(pos, 0, 2);
+    ofLine(pos*0.8, 0, pos*0.8, 2); //ofCircle(pos, 0, 2);
 
     }
 }
