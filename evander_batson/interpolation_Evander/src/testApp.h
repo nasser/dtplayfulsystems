@@ -19,6 +19,9 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
+    float rotation;
     void wave(float a, float b);
+    int speed;
+    int twirl;
 		
 };
