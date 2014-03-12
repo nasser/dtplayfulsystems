@@ -11,11 +11,11 @@ ofPoint testApp::pointOnLine(float t, ofPoint p1, ofPoint p2){
 
 //--------------------------------------------------------------
 void testApp::setup(){
-    ofSetBackgroundAuto(false);
+     ofSetBackgroundAuto(false);
 }
 
 //--------------------------------------------------------------
-void testApp::update(){
+void testApp::draw(){
     ofPoint from1, to1, from2, to2, from3, to3, from4, to4, circleCenter1, circleCenter2, circleCenter3, circleCenter4;
     float m = 10;
     
@@ -54,7 +54,7 @@ void testApp::update(){
 }
 
 //--------------------------------------------------------------
-void testApp::draw(){
+void testApp::update(){
 
 }
 
