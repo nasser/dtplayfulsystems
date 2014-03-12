@@ -17,6 +17,42 @@ ofPoint testApp::pointOnLine(float t, ofPoint p1, ofPoint p2) {
 }
 
 //--------------------------------------------------------------
+
+void testApp:: drawTwoPointsOnTwoLine(ofPoint p1, ofPoint p2, ofPoint p3, ofPoint p4, float t){
+
+}
+
+void testApp:: drawPointOnLine(ofPoint p1, ofPoint p2, int r, int g, int b){
+
+    
+    
+
+
+    for(int i = 0; i < 10; i++){
+
+        ofSetColor(r, g, b, 255 - i*20);
+        ofCircle(p1, 20 + i*5);
+        
+    }
+    
+    
+    
+    for(int i = 0; i < 10; i++){
+        
+        ofSetColor(r, g, b, 255 - i*20);
+        ofCircle(p2, 20 + i*5);
+        
+        
+    }
+    
+    
+    
+    
+    
+}
+
+
+
 void testApp::draw(){
 
     ofPoint froma, tob, circleCenter2;
@@ -65,6 +101,16 @@ void testApp::draw(){
     
     
 //    ofCircle(to1, to2);
+    
+//    ofPoint thisOne = ofPoint(100, 400);
+//    ofPoint thisTwo = ofPoint(350, 175);
+    
+    
+    drawPointOnLine(ofPoint(100, 400), ofPoint(350, 175), 255, 0, 0);
+    
+    drawPointOnLine(ofPoint(600, 500), ofPoint(90, ofGetWindowHeight() - 50), 0, 255, 255);
+    
+    drawPointOnLine(ofPoint(400, 300), ofPoint(400, 500), 0, 255, 0);
     
 }
 
