@@ -11,3 +11,5 @@ int main( ){
 	ofRunApp(new testApp());
 
 }
+
+// new testApp() means create an object that is an instance of the testApp class
