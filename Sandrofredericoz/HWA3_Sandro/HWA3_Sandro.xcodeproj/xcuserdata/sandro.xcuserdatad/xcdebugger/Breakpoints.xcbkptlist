@@ -8,12 +8,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "src/testApp.cpp"
-         timestampString = "415753025.357474"
+         timestampString = "416084095.302882"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "38"
-         endingLineNumber = "38"
-         landmarkName = "testApp::draw()"
+         startingLineNumber = "41"
+         endingLineNumber = "41"
+         landmarkName = "testApp:: drawStar(float x, float y, float size)"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint

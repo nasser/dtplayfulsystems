@@ -2,7 +2,8 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-
+    ofSetBackgroundAuto(true);
+    
 }
 
 //--------------------------------------------------------------
@@ -18,6 +19,7 @@ ofPoint testApp::pointOnLine(float t, ofPoint p1, ofPoint p2) {
 
 //--------------------------------------------------------------
 // circleCenter = from.getInterpolated(to, ofMap(sin(ofGetElapsedTimef()), -1, 1, 0, 1));
+
 void testApp::draw(){
     ofPoint from, to, circleCenter, from1, to1;
     from1.set(0, 0);
