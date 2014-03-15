@@ -8,10 +8,25 @@ void testApp::setup(){
 //--------------------------------------------------------------
 void testApp::update(){
 
+
+    
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
+
+    float mouseX01 = ofClamp((float)mouseX/ofGetWidth(),0,1);
+    
+    int minimumGrey=128;
+    int maximumGrey=220;
+    
+    float g=(maximumGrey-minimumGrey)*mouseX01-minimumGrey;
+    ofBackground(g, g, g);
+    
+    float circleX=ofMap(mouseX, 0, ofGetWidth(), 50, 350,true);
+    float circleY=ofMap(mouseX, 0, ofGetWidth(), 1/100, 300+sin(ofGetElapsedTimef()*10)*20,true);
+    
+    ofCircle(circleX, circleY, 40);
 
 }
 

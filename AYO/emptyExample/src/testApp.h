@@ -17,4 +17,6 @@ class testApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+    float xCord(float t, float x1, float x2);
+    float yCord(float t, float y1, float y2);
 };
