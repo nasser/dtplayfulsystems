@@ -47,7 +47,7 @@ void testApp::keyReleased(int key){
 
 //--------------------------------------------------------------
 void testApp::mouseMoved(int x, int y ){
-
+    destination.set(x,y);
 }
 
 //--------------------------------------------------------------
@@ -57,7 +57,11 @@ void testApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void testApp::mousePressed(int x, int y, int button){
-
+    if(button==0){
+    circleCenter.set(x,y); //don't need to write mouseX, mouseY
+    }else if(button==2){
+        destination.set(x, y);
+    }
 }
 
 //--------------------------------------------------------------
