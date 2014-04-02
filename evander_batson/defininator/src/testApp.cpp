@@ -129,7 +129,7 @@ void testApp::wordBank() {
     definitionP.push_back("Noun. The universally acceptable method of developing software.");
     definitionP.push_back("Adv. A disruption in the market that can be capitalized on for \n commercial gain.");
     definitionP.push_back("Noun. The total engagement of a user in a product.");
-    definitionP.push_back("Noun. The requirements needed in order for a project to stay solvent.");
+    definitionP.push_back("Adj. The minimum requirements needed to be accomplished in order \n for a project to stay solvent.");
     definitionP.push_back("Adj. Two interfaces that are smoothly combined into a unified product.");
     definitionP.push_back("Noun. An economically beneificial side-effect of a process.");
     definitionP.push_back("Adj. Software that scales and adapts to the device it is used on.");
