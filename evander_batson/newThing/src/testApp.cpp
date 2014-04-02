@@ -1,9 +1,5 @@
 #include "testApp.h"
 
-void testApp::drawShape(float x, float y){
-    ofRect(x, y, 50, 50);
-    ofRect(x + 100, y, 50, 50);
-}
 
 //--------------------------------------------------------------
 void testApp::setup(){
@@ -13,14 +9,32 @@ void testApp::setup(){
 //--------------------------------------------------------------
 void testApp::update(){
     
-    halfTime = ofGetElapsedTimef() / 2;
+}
+
+void testApp::drawPointOnLine(ofPoint p1, ofPoint p2, float t) {
+    t = ofClamp(t, 0, 1);
+    ofPoint circleCenter = p1.interpolate(p2, t);
     
+    ofCircle(circleCenter, 5);
+    ofLine(p1, p2);
+    ofCircle(p1, 3);
+    ofCircle(p2, 3);
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
     
-    drawShape(halfTime, ofGetHeight()/2);
+    ofPoint p1, p2;
+    
+    p1.set(30,30);
+    p2.set(100,200);
+    
+    drawPointOnLine(p1, p2, 0.5);
+    
+    for (int i=1; i<100; i++) {
+        drawPointOnLine(p1 + ofPoint(i*10, 0),
+                        p2 + ofPoint(i*10, 0), sin(ofGetElapsedTimef() + i));
+    }
 
 }
 

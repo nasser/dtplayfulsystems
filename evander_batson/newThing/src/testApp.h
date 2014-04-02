@@ -2,16 +2,6 @@
 
 #include "ofMain.h"
 
-class Person {
-public:
-    float height;
-    string job;
-    
-    void work();
-    string getIdentityString();
-    void printSayHelloTo(string pal);
-};
-
 class testApp : public ofBaseApp{
 
 	public:
@@ -29,7 +19,7 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-    float halfTime;
-    void drawShape(float x, float y);
+    void drawPointOnLine(ofPoint p1, ofPoint p2, float t);
+    
 		
 };
