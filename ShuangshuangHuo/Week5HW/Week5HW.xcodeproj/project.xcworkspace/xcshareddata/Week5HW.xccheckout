@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2A4F1A8D-AB46-490C-B6D8-13F28FA2999D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Week5HW</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D38FEEC2-3A44-4048-92DD-294093F6D413</key>
+		<string>https://github.com/puzzlepiece/dtplayfulsystems.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ShuangshuangHuo/Week5HW/Week5HW.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D38FEEC2-3A44-4048-92DD-294093F6D413</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/puzzlepiece/dtplayfulsystems.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D38FEEC2-3A44-4048-92DD-294093F6D413</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D38FEEC2-3A44-4048-92DD-294093F6D413</string>
+			<key>IDESourceControlWCCName</key>
+			<string>dtplayfulsystems</string>
+		</dict>
+	</array>
+</dict>
+</plist>
