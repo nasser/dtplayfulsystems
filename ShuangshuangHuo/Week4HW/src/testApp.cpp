@@ -28,7 +28,7 @@ void testApp::draw(){
 
 //--------------
 
-void testApp::star(float x,float y, float radius1, float points){
+void testApp::star(float x,float y, float radius1, float points){  //ofSetPolyMode(int mode) 
         float angle = TWO_PI / points;
         float halfAngle = angle/2.0;
         float radius2=radius1/5*2;
@@ -42,7 +42,10 @@ void testApp::star(float x,float y, float radius1, float points){
             ofVertex(sx, sy);
         }
         ofEndShape();
+    
     }
+
+
 
 
 

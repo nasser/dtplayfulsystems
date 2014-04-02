@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>E73CEF5B-D5B3-4A1F-A348-D21CEFFB695F</string>
+	<string>2AA5121F-D145-4B21-893D-4241F9C8C33D</string>
 	<key>IDESourceControlProjectName</key>
 	<string>betweenZeroAndOneShaping</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4946B9E2-FEC3-436D-B5CA-E27FB4FCA02A</key>
-		<string>https://github.com/nasser/dtplayfulsystems.git</string>
+		<key>71B17AC8-BE2B-4CC0-846E-0DCD7F186322</key>
+		<string>https://github.com/puzzlepiece/dtplayfulsystems.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>nasser/betweenZeroAndOneShaping/betweenZeroAndOneShaping.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4946B9E2-FEC3-436D-B5CA-E27FB4FCA02A</key>
+		<key>71B17AC8-BE2B-4CC0-846E-0DCD7F186322</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/nasser/dtplayfulsystems.git</string>
+	<string>https://github.com/puzzlepiece/dtplayfulsystems.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4946B9E2-FEC3-436D-B5CA-E27FB4FCA02A</string>
+	<string>71B17AC8-BE2B-4CC0-846E-0DCD7F186322</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4946B9E2-FEC3-436D-B5CA-E27FB4FCA02A</string>
+			<string>71B17AC8-BE2B-4CC0-846E-0DCD7F186322</string>
 			<key>IDESourceControlWCCName</key>
 			<string>dtplayfulsystems</string>
 		</dict>
