@@ -9,7 +9,8 @@
         float x0 = bow;
         float x1 = bow*2;
         float x2 = bow*3;
-        float x3 = bow*5;
+        float x3, y1;
+        x3 = y1 = bow*5;
         float x4 = bow*6;
         float x5 = bow*7;
         float x6 = bow*8;
@@ -21,7 +22,7 @@
         float x12 = bow*18;
         
         float y0 = bow*4;
-        float y1 = x3;
+        //float y1 = x3;
         float y2 = x4;
         float y3 = x5;
         float y4 = x6;

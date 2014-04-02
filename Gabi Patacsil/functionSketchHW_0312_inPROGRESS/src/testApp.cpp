@@ -17,13 +17,10 @@ void testApp::starflake(float x, float y, float size, float angle, float red){
     }
 }
 
-ofPoint testApp::twoPointsOnLine(ofPoint p1, ofPoint p2, ofPoint p3, ofPoint p4, float t){
+ofPoint testApp::pointOnLine(float t, ofPoint p1, ofPoint p2){
     t = ofClamp(t, 0, 1);
-    ofPoint circleCenterOne, circleCenterTwo;
-    return circleCenterOne = (p2 - p1) * t + p1;
-    return circleCenterTwo = (p4 - p3) * t + p3;
+    return (p2 - p1) * t + p1;
 }
-
     
 
 
@@ -47,15 +44,7 @@ void testApp::update(){
 void testApp::draw(){
    
     starflake(100, 200, 200, 30, 100);
-            ofPoint from, to, circleCenters;
-            from.set(100, 100);
-            to.set(500, 100);
-            
-            float t = ofMap(sin(ofGetElapsedTimef()), -1, 1, 0, .75);
-            circleCenters = twoPointsOnLine(from, to,from+100,to+200,t);
-            ofSetColor(100);
-            ofCircle(circleCenters, 1);
-    
+               
 
 
 }
