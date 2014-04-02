@@ -9,7 +9,7 @@ void testApp::setup(){
 	sansSerif.setLineHeight(18.0f);
 	sansSerif.setLetterSpacing(1.037);
     
-	serif.loadFont("times.ttf", 20, false);
+	serif.loadFont("times.ttf", 25, false);
 	serif.setLineHeight(30.0f);
 	serif.setLetterSpacing(1.037);
     
@@ -119,8 +119,8 @@ void testApp::wordBank() {
     definitionP.push_back("Noun. A process aiming to affect the entirety system.");
     definitionP.push_back("Verb. To use a resource to maximum advantage.");
     definitionP.push_back("Noun. a radical change in underlying technology in a network.");
-    definitionP.push_back("Verb. To check the availability of a client or colleague.");
-    definitionP.push_back("Noun. The interaction of elements that when combined produce \n a total effect that is greater than the sum of the individual elements, and contributions in a product.");
+    definitionP.push_back("Verb. To check the availability of a client \n or colleague.");
+    definitionP.push_back("Noun. The interaction of elements that when combined produce \n a total effect that is greater than the sum of the individual elements, and contributions \n in a product.");
     definitionP.push_back("Noun. A major success-point in the timeline of a development \n cycle.");
     definitionP.push_back("Noun. The follow-up tasks after a meeting.");
     definitionP.push_back("Noun. The quantified measures of value and change in an asset.");
