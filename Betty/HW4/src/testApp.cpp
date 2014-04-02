@@ -4,7 +4,8 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-    
+    ofSetBackgroundAuto(false);
+
 
 }
 
@@ -13,6 +14,7 @@ void testApp::update(){
 
 }
 
+//----------------------------------------------------------------
 ofPoint testApp::pointOnLine(float t, ofPoint p1, ofPoint p2, ofPoint p3, ofPoint p4){
     t = ofClamp(t, 0, 1);
     
@@ -24,14 +26,15 @@ ofPoint testApp::pointOnLine(float t, ofPoint p1, ofPoint p2, ofPoint p3, ofPoin
 void testApp::draw(){
     ofSetBackgroundColor(0,0,0);
 
-    ofSetColor(200, 2, 20);
+    ofSetColor(200, 2, 20, 5);
     
     ofPoint from, to, from1, to1, from2, to2, circleCenter, circleCenter2, circleCenter3, circleCenter4, circleCenter5;
     
-    from2.set(0, ofGetWidth()/2);
+    
+    from2.set(0, (ofMap(sin(ofGetElapsedTimef()), -1, 1, 0, 1)*10));//(0, y)
     to2.set(ofGetWidth()/2, ofGetHeight());
     from1.set(0, ofGetHeight());
-    to1.set(0,0);
+    to1.set(0, 0);
     from.set(0, ofGetHeight()/2);
     to.set(ofGetWidth()-100, ofGetHeight()/2);
     
@@ -56,9 +59,10 @@ void testApp::draw(){
     //ofLine(to, from);
     ofNoFill();
 //    ofCurve(600*sin(ofGetElapsedTimef()*8), ofGetWidth()/2, 90, 100, 80, 90, 208, ofGetWidth());
-    ofBezier(0, ofGetHeight()/2, ofGetWidth()/8, ofGetHeight()*-.8, ofGetWidth()/2, ofGetHeight(), ofGetWidth(), ofGetHeight()/2);
+    ofBezier(0, ofGetElapsedTimef()*5, ofGetWidth()/8, ofGetWidth()/2, ofGetWidth()/2, ofGetHeight(), ofGetWidth(), ofGetHeight()/2);
     ofBezier(0, ofGetHeight()/2, ofGetWidth()/8, ofGetHeight()*1.8, ofGetWidth()/2, ofGetHeight()*-.3, ofGetWidth(), ofGetHeight()/2);
 
+    ofCircle(userX, userY, 10);
     
 
     
@@ -66,6 +70,8 @@ void testApp::draw(){
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
+    
+
 
 }
 
@@ -76,6 +82,10 @@ void testApp::keyReleased(int key){
 
 //--------------------------------------------------------------
 void testApp::mouseMoved(int x, int y ){
+    userX = x;
+    userY = y;
+    to.set(x,y);
+
 
 }
 
@@ -87,6 +97,10 @@ void testApp::mouseDragged(int x, int y, int button){
 //--------------------------------------------------------------
 void testApp::mousePressed(int x, int y, int button){
 
+
+    
+    cout << x << endl;
+    cout << y << endl;
 }
 
 //--------------------------------------------------------------
