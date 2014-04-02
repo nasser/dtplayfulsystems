@@ -1,0 +1,143 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html > 
+<head> 
+     
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+  <script type="text/javascript" src="js/sb-1.3.0.js"></script>
+  
+
+         
+    <script type="text/javascript">
+        $(document).ready(function(){
+            window.addEventListener("devicemotion",onDeviceMotion,false);
+        });
+  
+        function onDeviceMotion(event){
+            var ctx = document.getElementById("c").getContext("2d");
+            var accel = event.accelerationIncludingGravity;
+            $("#sliderX").val(Math.round(accel.x)).slider("refresh");
+            $("#sliderY").val(Math.round(accel.y)).slider("refresh"); 
+            var angle = Math.atan2(accel.y,accel.x)  
+            ctx.clearRect(0,0,100,100);
+            ctx.beginPath();
+            ctx.arc(50,50,5,0,2*Math.PI,false);
+            ctx.moveTo(50,50);
+            ctx.lineTo(50-50*Math.cos(angle),50+50*Math.sin(angle));
+            ctx.stroke();
+        }
+
+              // when page loads call spacebrew setup function 
+    $(window).on("load", setupSpacebrew);
+
+    // wher the jquery mobile is ready to initialize the UI call the setUI function 
+    $(document).bind("pageinit", setupUI);
+
+    // Spacebrew Object
+    var sb
+      , app_name = "dessert"
+      , values = {} 
+      ;
+
+    /**
+     * setupSpacebrew Function that creates and configures the connection to the Spacebrew server.
+     *          It is called when the page loads.
+     */
+    function setupSpacebrew (){
+      var random_id = "0000" + Math.floor(Math.random() * 10000)
+        ;
+
+      app_name = app_name + ' ' + random_id.substring(random_id.length-4);
+
+      console.log("Setting up spacebrew connection");
+      sb = new Spacebrew.Client();
+
+      sb.name(app_name);
+      sb.description("Sliders for sending and displaying SpaceBrew range messages.");
+
+      // configure the publication and subscription feeds
+      sb.addPublish("sliderX", "range", "5");
+      sb.addPublish("sliderY", "range", "5");
+
+
+      // override Spacebrew events - this is how you catch events coming from Spacebrew
+      sb.onRangeMessage = onRangeMessage;
+      sb.onOpen = onOpen;
+
+      // connect to spacbrew
+      sb.connect();
+    };
+
+    /**
+     * Function that is called when Spacebrew connection is established
+     */
+    function onOpen() {
+      var message = "Connected as <strong>" + sb.name() + "</strong>. ";
+      if (sb.name() === app_name) {
+        message += "<br>You can customize this app's name in the query string by adding <strong>name=your_app_name</strong>."
+      }
+      $("#name").html( message );
+    }
+
+
+    /**
+     * setupUI Function that create the event listeners for the sliders. It creates an callback
+     *       function that sends a spacebrew message whenever an slide event is received.
+     */
+    function setupUI() {
+      console.log("Setting up the UI listeners");
+      // when the slider state changes it sends a message to spacebrew
+      $(".slider").bind( "change", function(event, ui) {
+        if (values[event.target.id] != event.target.value) {
+          sb.send(event.target.id, "range", event.target.value);
+          values[event.target.id] = event.target.value;
+        }
+      });
+    }
+
+    /**
+     * onRangeMessage Function that is called whenever new spacebrew range messages are received.
+     *          It accepts two parameters:
+     * @param  {String} name    Holds name of the subscription feed channel
+     * @param  {Integer} value  Holds value received from the subscription feed
+     */
+    function onRangeMessage(name, value){
+      console.log("Received new range message ", value);
+      $("#"+name).slider('refresh', value);
+    };
+
+
+    </script>
+    
+<link rel="stylesheet" href="style.css">
+
+</head> 
+<body> 
+ 
+<div data-role="page" id = "intropage">
+    
+
+    <div data-role="content">
+
+    <h1 id ="header">SHAKE ME FOR CHOCOLATE CAKE</h1>
+
+         <label for="sliderX">Shake Factor in the X</label>
+        <input type="range" class = "slider" name="slider" id="sliderX" value="0" min="-10" max="10"/>
+  
+          <label for="sliderY">Shake Factor in the Y</label>
+          <input type="range" class = "slider" name="slider" id="sliderY" value="0" min="-10" max="10" />
+
+     </div>    
+ 
+    <div id = "bottom" style = "text-align:center;margin-top:10px;">
+        <canvas id="c" width="100" height="100"></canvas>
+    </div>
+ 
+</div>
+ 
+</body> 
+</html>
