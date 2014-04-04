@@ -7,18 +7,32 @@ void testApp::setup(){
 
 //--------------------------------------------------------------
 void testApp::update(){
-    cout << ofNoise(6) << endl;
+    
+    cout << ofNoise(x) << endl;
+    x += 0.1;
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
-    for (int i=0; i<100; i++) {
-        for (int j=0; j<100; j++) {
-            ofSetColor(255 * ofNoise(i * 0.01, j, mouseY * 20, 1), 255 * ofNoise(i * 0.01, j, mouseY * 20, 2), 255 * ofNoise(i * 0.01, j, mouseY* 20, 3));
-            ofRect(i * 10, j * 10, 10, 10);
-        }
+    ofBackground(0);
+    ofPushMatrix();
+    ofTranslate(ofGetWindowSize()/2);
+    
+    for (int i=0; i<3000; i++) {
+    
+        ofCircle( ofSignedNoise(i*0.01+x)*500, ofSignedNoise((i+1)*0.1+x)*500, 1);
     }
-}
+    
+    ofPopMatrix();
+    x += 0.001;
+ //   particles.publishScreen();
+
+
+        for (int j=0; j<100; j++) {
+            ofSetColor(255 * ofNoise(j * 0.01, j, mouseY * 20, 1), 255 * ofNoise(j * 0.1, j, mouseY * 20, 2), 255 * ofNoise(j * 0.01, j, mouseY* 20, 3));
+        }}
+//            ofRect(i * 10, j * 10, 10, 10);
+//        }
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){

@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>585DCCA2-FC75-47BD-B1A7-562534E9DCD3</string>
+	<string>03AEFB7D-9264-4BAD-A0AA-A3CF946E4FFA</string>
 	<key>IDESourceControlProjectName</key>
 	<string>shapeFunctionHW_0226</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F81A7BA3-F7C1-4C36-919B-EDC4F96548F8</key>
-		<string>https://github.com/nasser/dtplayfulsystems.git</string>
+		<key>AEA8A073-CB96-4714-9648-EF0D7BFB89F4</key>
+		<string>https://github.com/stephanini/dtplayfulsystems.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Gabi Patacsil/shapeFunctionHW_0226/shapeFunctionHW_0226.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F81A7BA3-F7C1-4C36-919B-EDC4F96548F8</key>
+		<key>AEA8A073-CB96-4714-9648-EF0D7BFB89F4</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/nasser/dtplayfulsystems.git</string>
+	<string>https://github.com/stephanini/dtplayfulsystems.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F81A7BA3-F7C1-4C36-919B-EDC4F96548F8</string>
+	<string>AEA8A073-CB96-4714-9648-EF0D7BFB89F4</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F81A7BA3-F7C1-4C36-919B-EDC4F96548F8</string>
+			<string>AEA8A073-CB96-4714-9648-EF0D7BFB89F4</string>
 			<key>IDESourceControlWCCName</key>
-			<string>testGeometry</string>
+			<string>dtplayfulsystems</string>
 		</dict>
 	</array>
 </dict>
