@@ -5,18 +5,28 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 	<string>E73CEF5B-D5B3-4A1F-A348-D21CEFFB695F</string>
+=======
+	<string>8F672533-F2E7-4E53-B92D-731FC3E4135F</string>
+>>>>>>> 0ed8fe02ab85b1ff6ee5165ae8c33b0add53fe43
 	<key>IDESourceControlProjectName</key>
 	<string>betweenZeroAndOneShaping</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>4946B9E2-FEC3-436D-B5CA-E27FB4FCA02A</key>
 		<string>https://github.com/nasser/dtplayfulsystems.git</string>
+=======
+		<key>08193AE8-C7E6-4CAB-BB90-5DA14B0AE9E9</key>
+		<string>https://github.com/nicoleyimessier/dtplayfulsystems.git</string>
+>>>>>>> 0ed8fe02ab85b1ff6ee5165ae8c33b0add53fe43
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>nasser/betweenZeroAndOneShaping/betweenZeroAndOneShaping.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>4946B9E2-FEC3-436D-B5CA-E27FB4FCA02A</key>
 		<string>../../../..</string>
 	</dict>
@@ -26,13 +36,28 @@
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
 	<string>4946B9E2-FEC3-436D-B5CA-E27FB4FCA02A</string>
+=======
+		<key>08193AE8-C7E6-4CAB-BB90-5DA14B0AE9E9</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nicoleyimessier/dtplayfulsystems.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>08193AE8-C7E6-4CAB-BB90-5DA14B0AE9E9</string>
+>>>>>>> 0ed8fe02ab85b1ff6ee5165ae8c33b0add53fe43
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+<<<<<<< HEAD
 			<string>4946B9E2-FEC3-436D-B5CA-E27FB4FCA02A</string>
+=======
+			<string>08193AE8-C7E6-4CAB-BB90-5DA14B0AE9E9</string>
+>>>>>>> 0ed8fe02ab85b1ff6ee5165ae8c33b0add53fe43
 			<key>IDESourceControlWCCName</key>
 			<string>dtplayfulsystems</string>
 		</dict>
