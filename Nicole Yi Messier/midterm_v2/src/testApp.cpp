@@ -46,14 +46,14 @@ ofMesh testApp::pixelManipulate(ofImage imageA, ofMesh meshA, float intensityThr
     cout << meshA.getNumVertices() << endl;
     
     //-------------adding lines-------------------------
-    float connectionDistance = 30;
+    float connectionDistance = 40;
     int numVerts = meshA.getNumVertices();
     
     //finding all unique pairs of vertices
-    for (int a=0; a<numVerts; a+=5){
+    for (int a=0; a<numVerts; a++){
         //get position of the ith vertex with .getVertex
         ofVec3f verta = meshA.getVertex(a);
-        for(int b=a+1; b<numVerts; b+=5){
+        for(int b=a+1; b<numVerts; b++){
             ofVec3f vertb = meshA.getVertex(b);
             
             //distane() finds the distance btwn verticies
@@ -83,7 +83,11 @@ void testApp::setup(){
     imageOne.loadImage("wizardnebulaskycenter.png");
     imageTwo.loadImage("philly2.png");
     
+
     
+    ofPoint meshPoint;
+    meshPoint.set(300, 300);
+    meshOne = pixelManipulate(imageOne, meshPassOne,  50,  meshPoint);
 }
 
 //--------------------------------------------------------------
@@ -99,17 +103,7 @@ void testApp::draw(){
     ofColor edgeColor(0, 0, 0);
     ofBackgroundGradient(centerColor, edgeColor, OF_GRADIENT_CIRCULAR);
     
-    
-    ofMesh meshOne;
-    ofMesh meshTwo;
-    ofPoint from1, to1, from2, to2, from3, to3, from4, to4, meshPoint;
-    from1.set(0,0);
-    to1.set(ofGetWidth(), 0);
-    from2.set(0, ofGetWindowHeight());
-    to2.set(ofGetWidth(), ofGetHeight());
-    float t = ofMap(cos(ofGetElapsedTimef()), -1, 1, .5, 1);
-    
-    meshPoint = pointOnLine(from1, to1, t);
+  
     
     //3D view
     //left click to drag to rotate
@@ -118,11 +112,9 @@ void testApp::draw(){
     ofPushMatrix();
     ofTranslate(-ofGetWidth()/2, -ofGetHeight()/2);
     
-    meshOne = pixelManipulate(imageOne, meshPassOne,  50,  meshPoint);
+    
     meshOne.draw();
     
-    meshTwo = pixelManipulate(imageTwo, meshPassTwo,  25,  meshPoint);
-    meshTwo.draw();
     
     ofPopMatrix();
     easyCam.end();

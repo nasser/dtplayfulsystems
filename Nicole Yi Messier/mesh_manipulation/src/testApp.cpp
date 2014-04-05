@@ -5,9 +5,9 @@
 void testApp::setup(){
     
     //load image
-    image.loadImage("wizardnebulaskycenter.png");
+    image.loadImage("flower.png");
     
-    image.resize(200, 200);
+    //image.resize(200, 200);
     
     //specify what primitive mode the mesh should use to connect the verticies
     //create mesh with points as the primitive

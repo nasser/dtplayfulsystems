@@ -26,6 +26,7 @@ public:
     //create a mesh to pass to object
     ofMesh meshPassOne;
     ofMesh meshPassTwo;
+       ofMesh meshOne;
     
     
     //add a camera
