@@ -89,7 +89,7 @@ void testApp::draw(){
     float t = ofMap(cos(ofGetElapsedTimef()), -1, 1, 0, 1);
 
     meshPoint.set(200, 200);
-    //meshPoint = pointOnLine(from1, to1, t);
+    meshPoint = pointOnLine(from1, to1, t);
     
     //3D view
     //left click to drag to rotate
