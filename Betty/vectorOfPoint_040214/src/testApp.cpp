@@ -21,10 +21,10 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::draw(){
-    for (int i=0; i<points.size()-1; i++) {
-        ofLine(points[i], points[i+1]);
-    }
-    
+////    for (int i=0; i<points.size()-1; i++) {
+////        ofLine(points[i], points[i+1]);
+////    }
+//    
     //---------------------------- attractor part
     int n = 100000;
     
