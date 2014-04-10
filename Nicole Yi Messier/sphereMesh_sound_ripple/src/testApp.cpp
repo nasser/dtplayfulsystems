@@ -31,7 +31,8 @@ ofMesh testApp::meshSphereTop (ofImage imageA, ofMesh meshTop, vector<ofColor> c
         ofPoint pos;
         ofPoint negPos;
         float increment = 1;
-        float radiusSound = radius+sound.x;
+        //float radiusSound = radius+sound.x ;
+        float radiusSound = radius+sound.x + ofNoise(ofGetElapsedTimef(), i) *  50;
         
         for(float j=0; j<radiusSound+increment; j+=increment){
             float x = a*j+ofGetWidth()/2;
@@ -106,6 +107,7 @@ void testApp::update(){
 void testApp::draw(){
      //-----------movie------------
     myPlayer.draw(0, 0, 1024,768);
+    ofBackground(0, 0, 0);
     
     float radius = 100;
     float range = 100;
