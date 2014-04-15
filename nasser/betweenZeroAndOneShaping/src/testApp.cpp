@@ -1,9 +1,9 @@
 #include "testApp.h"
 
 //--------------------------------------------------------------
-void testApp::setup(){
+void testApp::setup(){    
+    //ofSetBackgroundAuto(false);
     ofSetBackgroundAuto(true);
-    
 }
 
 //--------------------------------------------------------------
@@ -31,6 +31,13 @@ void testApp::draw(){
     
     float t = ofGetElapsedTimef() - ((int)ofGetElapsedTimef());
     
+    //float t = decimal of elapsed time - int of elapsed time
+    //returns a value between 0 and 1
+    float t = ofGetElapsedTimef() - ((int)ofGetElapsedTimef());
+    
+    //print to serial
+    //cout << ((int)ofGetElapsedTimef()) << endl;
+        
     t = sqrt(1 - powf(1 - t, 2));
     
     circleCenter = pointOnLine( t, from, to);
