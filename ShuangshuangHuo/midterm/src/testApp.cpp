@@ -17,13 +17,16 @@ ofSetBackgroundAuto(false);
 void testApp:: drawShape(){
     for(int x=0;x<ofGetWidth();x+=step){
 
-        y=ofGetHeight()/2+pow(sin(ofRandom(ofGetHeight())),3)*500;
-        if (lastX > 0) {
+        //        y=ofGetHeight()/2+pow(sin(ofRandom(ofGetHeight())),3)*500;
+        y=ofGetHeight()/2+ofRandom(100);
+       
         ofLine(x,y,lastX,lastY);
-        }
+        
         lastX=x;
         lastY=y;
     }
+    
+//    lastX = 0;
     
 }
 
