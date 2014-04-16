@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>99EF9881-E52F-4313-A037-4A6C4F2E3771</string>
+	<key>IDESourceControlProjectName</key>
+	<string>playTech_v2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>599D0A5E-DDA5-4EDD-A402-587B861ED38F</key>
+		<string>https://github.com/nicoleyimessier/dtplayfulsystems.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Nicole Yi Messier/playTech_v2/playTech_v2.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>599D0A5E-DDA5-4EDD-A402-587B861ED38F</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nicoleyimessier/dtplayfulsystems.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>599D0A5E-DDA5-4EDD-A402-587B861ED38F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>599D0A5E-DDA5-4EDD-A402-587B861ED38F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>dtplayfulsystems</string>
+		</dict>
+	</array>
+</dict>
+</plist>

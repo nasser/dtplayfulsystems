@@ -111,7 +111,9 @@ void testApp::draw(){
     //right click to drag to zoom
     easyCam.begin();
     ofPushMatrix();
+    ofScale(1,-200,-200);
     ofTranslate(-ofGetWidth()/2, -ofGetHeight()/2);
+  
     
     meshOne = pixelManipulate(imageOne, meshPassOne,  50,  meshPoint);
     meshOne.draw();
@@ -169,13 +171,5 @@ void testApp::dragEvent(ofDragInfo dragInfo){
     
 }
 
-//--------------------------------------------------------------
-void testApp::onMessage( Spacebrew::Message & m ){
-    if ( m.name == "sliderX" ){
-        //int sliderXValue = m.valueRange();
-        sliderXValue = ofToInt(m.value) / 1024.0 * 500;
-        cout << sliderXValue << endl;
 
-    }
-}
 

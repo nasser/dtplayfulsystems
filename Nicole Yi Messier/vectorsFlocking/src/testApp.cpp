@@ -27,9 +27,10 @@ void testApp::update(){
     manualTarget.y = mouseY;
     
     
-    /*
+
     //cohesion - move towards average position
     
+    /*
     for (int i=0; i<points.size(); i++){
         
         ofPoint neighborAverage = ofPoint(0,0); //average of the negihbors
@@ -54,9 +55,9 @@ void testApp::update(){
         //move towards neighbors average point
         points[i].interpolate(neighborAverage, 0.01);
     }
-    */
     
-    /*
+    
+    
     for (int i=0; i<points.size(); i++){
         flockAverage += points[i];
     }
@@ -72,30 +73,40 @@ void testApp::update(){
     for(int i=0; i<points.size()/2; i++){ //change "points.size()" to change how many points
         
             //this is a side effect
-           // points[i].x = ofRandomWidth();
-            //points[i].y = ofRandomHeight();
+            points[i].x = ofRandomWidth();
+            points[i].y = ofRandomHeight();
         
         //move towards target (boids)
         //points[i].interpolate(target, 0.05); //.interpolate(point, float between 0 and 1)
         
     }
+     
      */
     
+    
+    
     //--------steer---------------
+    
     for(int i=0; i<angles.size(); i++){
         
         
         //angles[i] += ofRandomf();
         //angles[i] += ofSignedNoise(ofGetElapsedTimef());
-        angles[i] += ofSignedNoise(ofGetElapsedTimef(), i)*0.1; //ofSignedNoise you get a number btwn -1 and 1
-        speeds[i] += ofSignedNoise(ofGetElapsedTimef(), i)*0.1;
+       // angles[i] += ofSignedNoise(ofGetElapsedTimef(), i)*0.1; //ofSignedNoise you get a number btwn -1 and 1
+        //speeds[i] += ofSignedNoise(ofGetElapsedTimef(), i)*0.1;
     }
+     
     
     //------------move---------------
     for(int i=0; i<points.size(); i++){
-        points[i].x += cos(angles[i])*speeds[i];
-        points[i].y += sin(angles[i])*speeds[i];
+       points[i].x += cos(angles[i])*speeds[i];
+       points[i].y += sin(angles[i])*speeds[i];
+    
+        //points[i] += cos(angles[i])*speeds[i];
+        //points[i].y += sin(angles[i])*speeds[i];
+    
     }
+    
     
 }
 
@@ -112,7 +123,8 @@ void testApp::draw(){
     for(int i=0; i<angles.size(); i++){
         //ofVertex(points[i]);
         ofCircle(points[i], 2);
-        ofLine(points[i], points[i] + ofPoint(cos(angles[i])*10, sin(angles[i])*10));
+        ofLine(points[i], points[i] + ofPoint(10, 0));
+        //ofLine(points[i], points[i] + ofPoint(cos(angles[i])*10, sin(angles[i])*10));
     }
                
         //ofEndShape();
