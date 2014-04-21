@@ -24,4 +24,6 @@ public:
     vector<float> speeds;
     
     ofPoint manualTarget;
+    
+    
 };
