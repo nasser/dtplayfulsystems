@@ -19,9 +19,13 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
-
-
-
+    
+  
 ofPoint pointOnLine(ofPoint from, ofPoint to, float t);
+
+    
+    float halfTime;
+
+    
     
 };
