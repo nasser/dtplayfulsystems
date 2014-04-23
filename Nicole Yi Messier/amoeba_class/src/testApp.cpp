@@ -9,10 +9,13 @@ void testApp::setup(){
         meebOne.density = 100;
         meebOne.color.set(ofRandom(255), ofRandom(255), ofRandom(255));
         meebOne.shift.set(ofRandomWidth(), ofRandomHeight());
-        meebOne.speed = ofRandom(-5, 5);
+        
+        meebOne.speed = ofRandom(-2, 2);
+        
         if(meebOne.speed == 0){
-            meebOne.speed = 4;
+            meebOne.speed = 2;
         }
+        
         rainbow.push_back(meebOne);
     }
     
@@ -23,11 +26,22 @@ void testApp::update(){
 
     for(int i=0; i <rainbow.size(); i++){
         rainbow[i].moveMeebs();
+        
+        if(rainbow[i].shift.y > ofGetHeight() || rainbow[i].shift.y < 0 ){
+            cout << "speed before [" << i << "]: " << rainbow[i].speed << endl;
+            rainbow[i].speed = -rainbow[i].speed;
+            cout << "speed after: " << i << "]: " << rainbow[i].speed << endl;
+        }
     }
+    
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
+    
+    //cout << ((int)ofGetElapsedTimef()) % 5 << endl;
+    //cout << ((int)ofGetElapsedTimef() % 5 == 0) << endl;
+    
     ofBackground(0, 0, 0);
     
     easyCam.begin();
