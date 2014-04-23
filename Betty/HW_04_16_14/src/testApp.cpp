@@ -6,11 +6,18 @@
 void testApp::setup(){
     target = ofPoint(ofGetWidth()/2, ofGetHeight()/2);
     
-    for(int i = 0; i < 200; i++){
+    for(int i = 0; i < 300; i++){
         points.push_back(ofPoint(ofRandomWidth(), ofRandomHeight()));
         angles.push_back(0);
         speeds.push_back(2);
     }
+    
+    
+   // ofSetBackgroundAuto(false);
+    
+    ofBackground(0,0,0);
+
+
 }
 
 //--------------------------------------------------------------
@@ -71,6 +78,8 @@ void testApp::update(){
     
     //here we're working with direction
     
+    
+    
     //steer
     for (int i = 0; i <angles.size(); i++){
         //angles[i] += ofRandomf();
@@ -89,15 +98,17 @@ void testApp::update(){
         points[i].x += cos(angles[i])*2;
         points[i].y += sin(angles[i])*2;
         
-        ofPoint neighborAverage = ofPoint(0, 0);
 
         int neighborCount = 0;
+        
+        neighborAverage = ofPoint(0, 0);
+
         
         //
         //        //find neighbors
         for(int j = 0; j < points.size(); j++){
             
-            if(points[i].distance(points[j]) <= 50 && points[i].distance(points[j]) > 0){
+            if(points[i].distance(points[j]) <= 150 && points[i].distance(points[j]) > 0){
                 //                //we know that points[j] is a neighbor
 
                 neighborAverage += points[j];
@@ -110,13 +121,17 @@ void testApp::update(){
                 angles[i] += ofSignedNoise(ofGetElapsedTimef(), i) * -0.1;
                                 points[j].x += ofRandom(-0.1, 0.1);
                                points[j].y += ofRandom(-0.1, 0.1);
+                
+               // neighborAverage += points[j];
+                neighborCount++;
+
             }
             
         }
         //        // calculate neighbor average point
-        neighborAverage /= neighborCount;
+        neighborAverage /= neighborCount; // <- this is causing me issues....
         //        // move towards neighbor average point
-        points[i].interpolate(neighborAverage,  0.01);
+       points[i].interpolate(neighborAverage,  0.01);
 
            }
     
@@ -143,14 +158,18 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
     
-    ofBackground(0,0,0);
-    ofSetColor(255, 255, 255);
+    ofSetColor(255, 255, 255, 175);
     ofBeginShape();
     for(int i = 0; i<angles.size(); i++){
         //       ofVertex(points[i]);
         
-        ofCircle(points[i], 2);
+        //ofCircle(points[i], 4);
         ofLine(points[i], points[i] + ofPoint(cos(angles[i])*10, sin(angles[i])*10));
+        ofLine(points[i]+4, points[i] + ofPoint(cos(angles[i])*10, sin(angles[i])*10));
+        ofLine(points[i]-4, points[i] + ofPoint(cos(angles[i])*10, sin(angles[i])*10));
+        ofLine(points[i]+4, points[i]-4);
+
+
     }
     ofEndShape();
     

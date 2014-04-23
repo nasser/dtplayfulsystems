@@ -27,6 +27,9 @@ public:
     
     ofPoint target;
     ofPoint manualTarget;
+    ofPoint neighborAverage;
+    int neighborCount;
+
     
     vector <ofPoint> location;
     vector <ofPoint> velocity;

@@ -5,9 +5,14 @@ void testApp::setup(){
     target = ofPoint(ofGetWidth()/2, ofGetHeight()/2);
 
     for(int i = 0; i < 200; i++){
-        points.push_back(ofPoint(ofRandomWidth(), ofRandomHeight()));
-        angles.push_back(0);
-        speeds.push_back(2);
+        Flocker f;
+        f.point = ofPoint(ofRandomWidth(), ofRandomHeight());
+        f.speed = 0;
+        f.angles = 0;
+        flockers.push_back(f);
+//        points.push_back(ofPoint(ofRandomWidth(), ofRandomHeight()));
+//        angles.push_back(0);
+//        speeds.push_back(2);
     }
 }
 
@@ -79,9 +84,11 @@ void testApp::update(){
     }
     
     //move
-    for (int i = 0; i <points.size(); i++){
-        points[i].x += cos(angles[i])*2;
-        points[i].y += sin(angles[i])*2;
+    for (int i = 0; i <flockers.size(); i++){
+//        flockers[i].point.x += cos(flockers[i].angles)*2;
+//        flockers[i].point.y += sin(flockers[i].angles)*2;
+        
+        flockers[i].move();
     }
 }
 

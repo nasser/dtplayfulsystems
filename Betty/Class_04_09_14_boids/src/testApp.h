@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "Flocker.h"
 
 class testApp : public ofBaseApp{
 
@@ -19,9 +20,11 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-        vector<ofPoint> points;
-        vector <float> angles;
-        vector <float> speeds;
+    vector<Flocker> flockers;
+    
+//        vector<ofPoint> points;
+//        vector <float> angles;
+//        vector <float> speeds;
     
         ofPoint target;
         ofPoint manualTarget;
