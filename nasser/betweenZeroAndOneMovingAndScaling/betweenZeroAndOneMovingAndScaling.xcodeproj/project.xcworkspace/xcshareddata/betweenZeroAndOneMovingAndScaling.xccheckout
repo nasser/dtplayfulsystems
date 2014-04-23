@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>67B6D39F-E821-48F0-8AE8-7FEBCFFE40EA</string>
+	<string>BB78D821-8DA5-45C0-9360-F23D8197EF9C</string>
 	<key>IDESourceControlProjectName</key>
 	<string>betweenZeroAndOneMovingAndScaling</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4946B9E2-FEC3-436D-B5CA-E27FB4FCA02A</key>
-		<string>https://github.com/nasser/dtplayfulsystems.git</string>
+		<key>8D2DE15C-6EDC-43E3-A4DD-7C669C2DA321</key>
+		<string>https://github.com/evanderbatson/dtplayfulsystems.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>nasser/betweenZeroAndOneMovingAndScaling/betweenZeroAndOneMovingAndScaling.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4946B9E2-FEC3-436D-B5CA-E27FB4FCA02A</key>
+		<key>8D2DE15C-6EDC-43E3-A4DD-7C669C2DA321</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/nasser/dtplayfulsystems.git</string>
+	<string>https://github.com/evanderbatson/dtplayfulsystems.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4946B9E2-FEC3-436D-B5CA-E27FB4FCA02A</string>
+	<string>8D2DE15C-6EDC-43E3-A4DD-7C669C2DA321</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4946B9E2-FEC3-436D-B5CA-E27FB4FCA02A</string>
+			<string>8D2DE15C-6EDC-43E3-A4DD-7C669C2DA321</string>
 			<key>IDESourceControlWCCName</key>
 			<string>dtplayfulsystems</string>
 		</dict>
