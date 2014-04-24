@@ -19,7 +19,7 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-        Person me;
+        Person* r;
     
         void introduce(Person* a, Person* b);
 };

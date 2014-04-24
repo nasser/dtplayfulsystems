@@ -2,25 +2,37 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-    Person p;
-    p.age = 8;
+    Person p("some kid", 8);
     p.alive = false;
     p.employed = false;
-    p.name = "some kid";
     p.major = "mfadt";
-    
-    Person q;
-    q.name = "other name";
+        
+    Person q("other name");
     q.alive = false;
-    q.age = 9102;
+    q.employed = false;
+    q.major = "...";
+    
+    r = new Person("nameless");
+    cout << r->name << endl;
+    r->age = 100;
+    
+    r->giggleNervously();
+    r->giggleNervously("ohno");
+    r->giggleNervously("ohno", 100);
+    
+    int a;
+    a = 0;
+    
+    cout << &r << endl;
+    cout << &r << endl;
     
 //    cout << "There's this kid named " << p.name << "!" << endl;
     
-    cout << p.name << endl;
+// cout << p.name << endl;
     
-    introduce(&p, &q);
+//    introduce(&p, &q);
     
-    cout << p.name << endl;
+//    cout << p.name << endl;
     
 //    p.meet(q);
     
@@ -40,7 +52,7 @@ void testApp::introduce(Person* a, Person* b) {
 
 //--------------------------------------------------------------
 void testApp::update(){
-    
+    r->giggleNervously();
 }
 
 //--------------------------------------------------------------

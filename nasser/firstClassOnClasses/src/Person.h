@@ -15,14 +15,21 @@ using namespace std; // giggle
 
 class Person {
 public:
-    int age;
     bool alive;
+    long deathday;
+    int age;
     bool employed;
     string name;
     string major;
+    int birthday;
+    
+    Person(string name);
+    Person(string name, int age);
     
     void sneeze();
     void giggleNervously();
+    void giggleNervously(string thingToGiggle);
+    void giggleNervously(string thingToGiggle, int timesToGiggle);
     void meet(Person other);
     void switchMajor(string newMajor);
     bool shouldBeEmployed();
