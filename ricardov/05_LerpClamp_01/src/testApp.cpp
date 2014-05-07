@@ -30,7 +30,7 @@ void testApp::update(){
 void testApp::draw(){
     
     // 1 - LERP, YELLOW BALL - - - - - - - - - - - - - - - -
-    amount1 = 0.1;
+//    amount1 = 0.1;
 
     x1 = ofLerp(x1, mouseX, amount1);
     y1 = ofLerp(y1, mouseY, amount1);
