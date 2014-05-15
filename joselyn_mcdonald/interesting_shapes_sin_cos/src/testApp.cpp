@@ -110,12 +110,6 @@ void testApp::draw(){
     
     
     
-    
-    
-    
-    
-    
-    
    //this is a sin wave
 
     
@@ -131,7 +125,6 @@ void testApp::draw(){
         prev_y = y;
         a = a + inc;
     }
-    
     
 }
 

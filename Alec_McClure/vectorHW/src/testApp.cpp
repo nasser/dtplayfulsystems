@@ -32,8 +32,15 @@ void testApp::setup(){
 //--------------------------------------------------------------
 void testApp::update(){
     for (int i=0; i<points.size(); i++) {
+
+        /*
         points[i].y = ofGetHeight()/2 + sin(i + ofGetElapsedTimef()) * 300; //last number is the pixel height multiplier
         points[i].x *= 1.008;
+        */
+
+        float temp = i/10;
+        points[i].x = ofRandom(points[i].x- i , points[i].x + i);
+        points[i].y = ofRandom(points[i].y - i, points[i].y + i);
 
     }
 
@@ -45,16 +52,20 @@ void testApp::draw(){
 
     //////vector of points
 
-    ofSetColor(255);
+    ofSetColor(150);
     for (int i=0; i<points.size()-1; i++) {
         ofLine(points[i], points[i+1]);
         ofLine(points[i].x + 80, points[i].y, points[i+1].x, points[i+1].y);//
+
+
     }
+
+
 
     ///// end vector
 
 
-    int n = 3000;
+    int n = 1000;
 
     float a = 0 + sin(ofGetElapsedTimef());
     float b = -2.3;
@@ -98,13 +109,26 @@ void testApp::draw(){
 
         cout << "Drawing at " << rects[rects.size()-1] << endl;
 
-        ofSetColor(200, 200, 200, 150);
+        ofSetColor(255, 255, 255, 150);
         ofSetLineWidth(1);
 
         float x3 = x1 * 2;
         float y3 = y1 * 2;
+        float x4 = x1;
+        float y4 = y1;
 
-        ofLine(x1 * 100 + ofGetWidth()/2, y1 * 100 + ofGetHeight()/2, x3*100+ 3 + ofGetWidth()/2, y3*100 + ofGetHeight()/2); // the plus number is an offset since were using lines (cant show points)
+        float xAdd = 0;//mouseX;//ofGetWidth()/2;
+        float yAdd = 0;//mouseY;//ofGetHeight()/2;
+        ofPoint target;
+        target.x = mouseX;
+        target.y = mouseY;
+
+        ofPoint myPoint;
+        myPoint.set(x4,y4);
+        myPoint = target.interpolate(myPoint, 0.1);
+        //interpolate(
+
+        ofLine(myPoint.x * 100 + xAdd, myPoint.y * 100 + yAdd, myPoint.x *100+ 3 + xAdd, myPoint.y *100 + yAdd); // the plus number is an offset since were using lines (cant show points)
 
 
 
