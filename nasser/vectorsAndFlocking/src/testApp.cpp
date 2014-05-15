@@ -5,9 +5,15 @@ void testApp::setup(){
     manualTarget = ofPoint(ofGetWidth()/2, ofGetHeight()/2);
     
     for (int i=0; i<200; i++) {
-        points.push_back(ofPoint(ofRandomWidth(), ofRandomHeight()));
-        angles.push_back(0);
-        speeds.push_back(0);
+        Flocker f;
+        f.point = ofPoint(ofRandomWidth(), ofRandomHeight());
+        f.speed = 1;
+        f.angle = 0;
+        flockers.push_back(f);
+        
+        // points.push_back(ofRandomWidth(), ofRandomHeight());
+        // angles.push_back(0);
+        // speeds.push_back(0);
     }
 }
 
@@ -73,9 +79,11 @@ void testApp::update(){
     */
 
     // move
-    for (int i=0; i<points.size(); i++) {
-        points[i].x += cos(angles[i])*speeds[i];
-        points[i].y += sin(angles[i])*speeds[i];
+    for (int i=0; i<flockers.size(); i++) {
+        flockers[i].move();
+        
+        // points[i].x += cos(angles[i])*speeds[i];
+        // points[i].y += sin(angles[i])*speeds[i];
     }
 }
 
@@ -83,17 +91,9 @@ void testApp::update(){
 void testApp::draw(){
     ofBackground(0, 0, 0);
     ofSetColor(255, 255, 255);
-//    ofNoFill();
-//    ofBeginShape();
-    for (int i=0; i<points.size(); i++) {
-//        ofVertex(points[i]);
-        ofCircle(points[i], 2);
-        ofLine(points[i], points[i] + ofPoint(cos(angles[i])*10, sin(angles[i])*10));
+    for (int i=0; i<flockers.size(); i++) {
+        flockers[i].draw();
     }
-//    ofEndShape();
-    
-    // ofSetColor(255, 0, 0);
-    // ofCircle(manualTarget, 10);
 }
 
 //--------------------------------------------------------------
