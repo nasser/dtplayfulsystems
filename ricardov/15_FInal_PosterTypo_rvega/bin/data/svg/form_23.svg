@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="108.714px"
+   height="107.335px"
+   viewBox="0 0 108.714 107.335"
+   enable-background="new 0 0 108.714 107.335"
+   xml:space="preserve"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="form_28.svg"><metadata
+   id="metadata3833"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs3831" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1180"
+   inkscape:window-height="833"
+   id="namedview3829"
+   showgrid="false"
+   inkscape:zoom="2.1987236"
+   inkscape:cx="54.356997"
+   inkscape:cy="53.667499"
+   inkscape:window-x="120"
+   inkscape:window-y="138"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Layer_1" />
+<linearGradient
+   id="SVGID_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="246.563"
+   y1="-695.1118"
+   x2="386.5415"
+   y2="-695.1118"
+   gradientTransform="matrix(2.2281857,0,0,-2.473913,-706.4347,-1715.8767)">
+	<stop
+   offset="0"
+   style="stop-color:#973973"
+   id="stop3813" />
+	<stop
+   offset="0.1959"
+   style="stop-color:#862371"
+   id="stop3815" />
+	<stop
+   offset="0.2393"
+   style="stop-color:#821E70"
+   id="stop3817" />
+	<stop
+   offset="0.619"
+   style="stop-color:#A53961"
+   id="stop3819" />
+	<stop
+   offset="0.6258"
+   style="stop-color:#A63A61"
+   id="stop3821" />
+	<stop
+   offset="0.745"
+   style="stop-color:#9A4F77"
+   id="stop3823" />
+	<stop
+   offset="0.9831"
+   style="stop-color:#7C82AC"
+   id="stop3825" />
+</linearGradient>
+<path
+   d="m 3.0584086,42.03243 c -9.4385935,0.05937 -12.3107246,8.334613 -17.4622906,11.0386 -11.33478,5.96955 -34.35194,12.48336 -51.676084,16.65191 -41.963424,10.15046 -86.879184,1.44229 -90.782974,-37.727175 -1.53744,-15.504012 7.00319,-38.2318514 16.66238,-52.088238 8.48493,-12.169178 22.29745,-25.911764 39.29628,-32.353833 53.443034,-20.184656 107.3606678,-16.325351 149.308498,0.9104 19.08218,7.958577 27.1081,13.359129 40.94737,19.769038 13.647632,6.241682 24.922252,14.521869 39.492362,25.0706336 10.87132,6.81068196 25.26763,19.3583704 25.59294,26.9186484 0.32309,7.562751 2.12346,17.347077 -5.49471,28.14076 C 134.63723,68.62205 86.889438,47.390926 49.834708,47.017365"
+   id="path3827"
+   style="fill:url(#SVGID_1_)"
+   inkscape:connector-curvature="0" />
+</svg>
