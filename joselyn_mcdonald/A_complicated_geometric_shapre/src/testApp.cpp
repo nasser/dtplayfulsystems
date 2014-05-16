@@ -26,7 +26,7 @@ void testApp::draw(){
     for(int i = 0; i<1000; i+=10){
     ofSetColor(20, 1+i, 200+i);
 
-    ofLine(x+i, 0, 600, y+i);
+    ofLine(x+i *sin(ofGetElapsedTimef()), 0, 600, y+i);
         t=2;
         
     }
@@ -39,7 +39,7 @@ void testApp::draw(){
 
     for(int i = 0; i<1000; i+=10){
         ofSetColor(20, 10+i, 20+i);
-        ofLine(x+i, 600, 600 , y-i);
+        ofLine(x+i*sin(ofGetElapsedTimef()), 600, 600 , y-i);
         t=3; 
         
     }
@@ -50,7 +50,7 @@ void testApp::draw(){
 
     for(int i = 0; i<1000; i+=10){
         ofSetColor(10+i, 1+i, 20+i);
-        ofLine(600-i, 600, 0 , 300-i);
+        ofLine(600-i *sin(ofGetElapsedTimef()), 600, 0 , 300-i);
         t=4; 
         
         
@@ -61,7 +61,7 @@ void testApp::draw(){
 
     for(int i = 0; i<1000; i+=10){
         ofSetColor(i, 1+i, 20+i);
-       ofLine(0, 600-i, 300+i , 0);
+       ofLine(0*sin(ofGetElapsedTimef()), 600-i, 300+i , 0);
         
         
     }
