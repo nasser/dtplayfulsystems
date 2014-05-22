@@ -9,11 +9,19 @@
 #include "person.h"
 
 void Person::seize(){
-    ofBackground(ofRandom(255), ofRandom(255), ofRandom(255));
+  //  ofSetBackgroundColor(255, 255, 255);
+}
+
+Person::Person(string name){
+    age = 8;
+    alive = true;
+    employed = false;
+    this ->name = name;
+    major = "";
 }
 
 void Person::giggleNervously(){
-    cout << "hehe" << endl;
+    cout << "hehehehehe" << endl;
 }
 
 void Person::meet(Person other){

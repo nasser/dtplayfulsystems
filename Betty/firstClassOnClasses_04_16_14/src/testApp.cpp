@@ -9,7 +9,7 @@ void testApp::setup(){
     p.alive = true;
     p.employed = false;
     p.name = "Herp";
-    p.major;
+    p.major = "mfadt";
     
 
     Person q;
@@ -17,13 +17,13 @@ void testApp::setup(){
     
     cout << "There;s these kids named " << p.name << " and " << q.name << "!" << endl;
 
-    introduce(q, p);
+  //  introduce(q, p);
     p.meet(q);
     p.switchMajor("Biology");
 }
 
 //--------------------------------------------------------------
-void testApp::introduce(Person a, Person b){
+// void testApp::introduce(Person a, Person b){
     cout << "Hey! "<< a.name << " is cool" << endl;
     cout << "Hey!"<< b.name << " is cool too" << endl;
 
