@@ -80,16 +80,10 @@ void testApp:: drawFish(){
 
 //--------------------------------------------------------------
 void testApp::draw(){
-    
-    
 
-    
     ofSetColor(255, 0, 9, 15);
-    
-    
+        
     fish.draw(userX, userY);
-    
-    
     
     ofSetColor(0,0,0);
     rgbaFboFloat.draw(0,0);
@@ -118,13 +112,14 @@ void testApp::draw(){
     circleCenter4 = pointOnLine(ofMap(sin(ofGetElapsedTimef()-.3), -1, 1, 0, 1), from, to, from2, from1);
     circleCenter5 = pointOnLine(ofMap(sin(ofGetElapsedTimef()-.5), -1, 1, 0, 1), from, to, from2, from1);
     
-    ofCircle(circleCenter, 40);
-    ofSetColor(0, 34, 255, 50);
-    ofCircle(circleCenter2, 30);
-  ofSetColor(0, 56, 255, 50);
-    ofCircle(circleCenter3, 20);
-  ofSetColor(0, 32, 255, 50);
-    ofCircle(circleCenter4, 10);
+    //these draw the blue thing
+//    ofCircle(circleCenter, 40);
+//    ofSetColor(0, 34, 255, 50);
+//    ofCircle(circleCenter2, 30);
+//  ofSetColor(0, 56, 255, 50);
+//    ofCircle(circleCenter3, 20);
+//  ofSetColor(0, 32, 255, 50);
+//    ofCircle(circleCenter4, 10); 
     
     
     //ofCircle(circleCenter5, 5);
